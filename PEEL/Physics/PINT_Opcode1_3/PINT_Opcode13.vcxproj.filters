@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Opcode13">
+      <UniqueIdentifier>{ad5046fc-e406-4b63-b081-2c3b7d3074f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{5a615b75-3c9e-4654-a7ce-03374dd3c457}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PINT_Opcode13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceAABB.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceContainer.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceHPoint.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceIndexedTriangle.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceMatrix3x3.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceMatrix4x4.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceOBB.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IcePlane.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IcePoint.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceRandom.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceRay.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceRevisitedRadix.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceSegment.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceTriangle.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Ice\IceUtils.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_AABBCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_AABBTree.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_BaseModel.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_BoxPruning.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_Collider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_Common.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_HybridModel.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_LSSCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_MeshInterface.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_Model.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_OBBCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_OptimizedTree.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_Picking.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_PlanesCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_RayCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_SphereCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_SweepAndPrune.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_TreeBuilders.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_TreeCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\OPC_VolumeCollider.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="Opcode13\Opcode.cpp">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PINT_Common\PINT_Common.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PINT_Common\PINT_IceAllocatorSwitch.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PINT_Opcode13.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_AABBCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_AABBTree.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_BaseModel.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_BoxBoxOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_BoxPruning.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_Collider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_Common.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_HybridModel.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_IceHook.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_LSSAABBOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_LSSCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_LSSTriOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_MeshInterface.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_Model.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_OBBCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_OptimizedTree.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_Picking.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_PlanesAABBOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_PlanesCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_PlanesTriOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_RayAABBOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_RayCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_RayTriOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_Settings.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_SphereAABBOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_SphereCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_SphereTriOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_SweepAndPrune.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_TreeBuilders.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_TreeCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_TriBoxOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_TriTriOverlap.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\OPC_VolumeCollider.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="Opcode13\Opcode.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PINT_Common\PINT_Common.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PINT_Common\PINT_Ice.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PINT_Common\PINT_IceAllocatorSwitch.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Opcode13\Ice\IceAABB.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceAxes.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceBoundingSphere.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceContainer.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceFPU.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceHPoint.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceIndexedTriangle.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceLSS.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceMatrix3x3.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceMatrix4x4.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceMemoryMacros.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceOBB.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IcePairs.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IcePlane.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IcePoint.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IcePreprocessor.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceRandom.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceRay.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceRevisitedRadix.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceSegment.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceTriangle.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceTrilist.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceTypes.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Opcode13\Ice\IceUtils.h">
+      <Filter>Source Files\Opcode13</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

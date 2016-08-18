@@ -33,9 +33,9 @@
 		 *	\return		true if success
 		 */
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		override(SubdivScheme)	bool				Init(IndexedSurface& surface);
-		override(SubdivScheme)	bool				Close(IndexedSurface& surface);
-		override(SubdivScheme)	bool				ComputeNewVertex(udword face_id, udword vref0, udword vref1, Point& p, SubdivHistory* history);
+		overriden(SubdivScheme)	bool				Init(IndexedSurface& surface);
+		overriden(SubdivScheme)	bool				Close(IndexedSurface& surface);
+		overriden(SubdivScheme)	bool				ComputeNewVertex(udword face_id, udword vref0, udword vref1, Point& p, SubdivHistory* history);
 	};
 
 #endif // ICELOOP_H

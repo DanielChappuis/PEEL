@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xkeycheck.h(246): warning C4005: 'override': macro redefinition
+  c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IcePreprocessor.h(116): note: see previous definition of 'override'
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.

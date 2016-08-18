@@ -55,6 +55,7 @@
 		}
 	};
 
+/*
 static inline_ void FillResultStruct(PintRaycastHit& hit, const MyClosestRayResultCallback& result, float max_dist)
 {
 //	hit.mObject			= result.m_collisionObject;
@@ -65,6 +66,7 @@ static inline_ void FillResultStruct(PintRaycastHit& hit, const MyClosestRayResu
 	hit.mDistance		= result.m_closestHitFraction * max_dist;
 	hit.mTriangleIndex	= result.m_TriangleIndex;
 }
+*/
 
 udword Bullet::BatchRaycasts(PintSQThreadContext context, udword nb, PintRaycastHit* dest, const PintRaycastData* raycasts)
 {

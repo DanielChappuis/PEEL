@@ -1,0 +1,32 @@
+﻿  stdafx.cpp
+  Using ICE Core
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): error C2144: syntax error: 'bool' should be preceded by ';'
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): warning C4183: 'override': missing return type; assumed to be a member function returning 'int'
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C2259: 'Opcode::AABBOptimizedTree': cannot instantiate abstract class
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): note: due to following members:
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): note: 'bool Opcode::AABBOptimizedTree::Build(Opcode::AABBTree *)': is abstract
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(149): note: see declaration of 'Opcode::AABBOptimizedTree::Build'
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): note: 'bool Opcode::AABBOptimizedTree::Refit(const Opcode::MeshInterface *)': is abstract
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(158): note: see declaration of 'Opcode::AABBOptimizedTree::Refit'
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): note: 'bool Opcode::AABBOptimizedTree::Walk(Opcode::GenericWalkingCallback,void *) const': is abstract
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(168): note: see declaration of 'Opcode::AABBOptimizedTree::Walk'
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): note: 'udword Opcode::AABBOptimizedTree::GetUsedBytes(void) const': is abstract
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(171): note: see declaration of 'Opcode::AABBOptimizedTree::GetUsedBytes'
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C2144: syntax error: 'bool' should be preceded by ';'
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): warning C4183: 'override': missing return type; assumed to be a member function returning 'int'
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C2535: 'int Opcode::AABBCollisionTree::override(Opcode::AABBOptimizedTree)': member function already defined or declared
+  c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): note: see declaration of 'Opcode::AABBCollisionTree::override'
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C3646: 'udword': unknown override specifier
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C3646: 'GetUsedBytes': unknown override specifier
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): error C2059: syntax error: '('
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_opcode1_3\opcode13\OPC_OptimizedTree.h(180): fatal error C1903: unable to recover from previous error(s); stopping compilation
+  INTERNAL COMPILER ERROR in 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe'
+      Please choose the Technical Support command on the Visual C++
+      Help menu, or open the Technical Support help file for more information

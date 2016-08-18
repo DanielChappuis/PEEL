@@ -67,16 +67,16 @@ static bool CreateDefaultEnvironment(Pint& pint)
 {
 //return true;
 	PINT_BOX_CREATE BoxDesc;
-	BoxDesc.mExtents	= Point(400.0f, 10.0f, 400.0f);
-	BoxDesc.mRenderer	= CreateBoxRenderer(BoxDesc.mExtents);
+	BoxDesc.mExtents = Point(20.0f, 10.0f, 20.0f);
+	BoxDesc.mRenderer = CreateBoxRenderer(BoxDesc.mExtents);
 	BoxDesc.mRenderer->SetShadows(false);
 
 	PINT_OBJECT_CREATE ObjectDesc;
-	ObjectDesc.mShapes		= &BoxDesc;
-	ObjectDesc.mPosition.x	= 0.0f;
-	ObjectDesc.mPosition.y	= -10.0f;
-	ObjectDesc.mPosition.z	= 0.0f;
-	ObjectDesc.mMass		= 0.0f;
+	ObjectDesc.mShapes = &BoxDesc;
+	ObjectDesc.mPosition.x = 0.0f;
+	ObjectDesc.mPosition.y = -10.0f;
+	ObjectDesc.mPosition.z = 0.0f;
+	ObjectDesc.mMass = 0.0f;
 	CreatePintObject(pint, ObjectDesc);
 	return true;
 }

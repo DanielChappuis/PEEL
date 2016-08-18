@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  Using ICE Core
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): error C2144: syntax error: 'bool' should be preceded by ';'
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): warning C4183: 'override': missing return type; assumed to be a member function returning 'int'
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI

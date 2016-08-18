@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{6c67f4f8-b5c5-4b1b-b61d-c573b9ca8a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewtonHeaders">
+      <UniqueIdentifier>{100672d9-ebeb-4d61-9147-f25e4c07e539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewtonHeaders\newton">
+      <UniqueIdentifier>{828f85a4-eb2e-4233-a0cc-8603accd327a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewtonHeaders\Joints">
+      <UniqueIdentifier>{39c570b6-3546-4cfd-a811-a6f7c1d7107c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewtonHeaders\math">
+      <UniqueIdentifier>{d8de5c7a-84ca-4d5d-9fd8-a43280aef10c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PINT_Newton3_13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PINT_Common\PINT_Common.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\dMath\dMathDefines.cpp">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\dMath\dMatrix.cpp">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\dMath\dQuaternion.cpp">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\dMath\dStdAfxMath.cpp">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClCompile>
+    <ClCompile Include="packages\dMath\dVector.cpp">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PINT_Newton3_13.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PINT_Common\PINT_Common.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PINT_Common\PINT_Ice.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Newton\source\newton\Newton.h">
+      <Filter>NewtonHeaders\newton</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\Custom6DOF.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomBallAndSocket.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomControllerManager.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomCorkScrew.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomDryRollingFriction.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomGear.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomHinge.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomJoint.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomJointLibraryStdAfx.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomKinematicController.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomList.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomPathFollow.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomPlayerControllerManager.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomPulley.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomRackAndPinion.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomSkeletonTransformManager.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomSlider.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomSlidingContact.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomTriggerManager.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomUniversal.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomUpVector.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomUserBlank.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dCustomJoints\CustomVehicleControllerManager.h">
+      <Filter>NewtonHeaders\Joints</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dMath\dMathDefines.h">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dMath\dMatrix.h">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dMath\dQuaternion.h">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dMath\dStdAfxMath.h">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClInclude>
+    <ClInclude Include="packages\dMath\dVector.h">
+      <Filter>NewtonHeaders\math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

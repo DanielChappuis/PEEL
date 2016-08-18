@@ -17,10 +17,10 @@
 #undef log2
 #endif
 
-	inline_ float	log2(float f)
+	/*inline_ float	log2(float f)
 	{
 	  return logf(f) * INVLN2;
-	}
+	}*/
 
 	// The original loop
 	inline_ udword CodeSize1(udword value)
