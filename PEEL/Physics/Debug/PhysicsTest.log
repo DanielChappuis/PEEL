@@ -1,10 +1,69 @@
 ﻿  stdafx.cpp
   Using ICE Core
-c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): error C2144: syntax error: 'bool' should be preceded by ';'
-c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IceCoreAPI.h(17): warning C4183: 'override': missing return type; assumed to be a member function returning 'int'
   Using ICE Maths
   Using CONTACT
   Using ICE Meshmerizer
   Using ICE ImageWork
   Using ICE GUI
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(210): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  TrashCache.cpp
+  TitleWindow.cpp
+  TitleData.cpp
+  TestSelector.cpp
+  TestScenes_Sweep.cpp
+  TestScenes_StaticScene.cpp
+  TestScenes_Raycast.cpp
+  TestScenes_Performance.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocinfo(32): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  TestScenes_Overlap.cpp
+  TestScenes_ContactGeneration.cpp
+  TestScenes_CCD.cpp
+  TestScenes_Behavior.cpp
+  TestScenes_API.cpp
+  TestScenesHelpers.cpp
+  TestScenes.cpp
+  SurfaceManager.cpp
+  Script.cpp
+  RepX_Tools.cpp
+  Render.cpp
+  RaytracingWindow.cpp
+  Generating Code...
+  Compiling...
+  RaytracingTest.cpp
+  Random.cpp
+  QPCTime.cpp
+  ProgressBar.cpp
+  PintTiming.cpp
+  PintSQ.cpp
+  PintRender.cpp
+  PintObjectsManager.cpp
+  Pint.cpp
+  PEEL.cpp
+  MyConvex.cpp
+  Loader_RepX.cpp
+  Loader_Rays.cpp
+  Loader_Bin.cpp
+  IceBunny.cpp
+IceBunny.cpp(475): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+  GLVSync.cpp
+  GLFontRenderer.cpp
+  FileFinder.cpp
+  CameraManager.cpp
+  Camera.cpp
+  Generating Code...
+  hacdManifoldMesh.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\exception(359): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  hacdICHull.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\exception(359): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  hacdHACD.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\exception(359): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  hacdGraph.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\exception(359): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Debug\PEEL.exe) does not match the Linker's OutputFile property value (C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Build\PEEL_DEBUG.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(PEEL) does not match the Linker's OutputFile property value (PEEL_DEBUG). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  PhysicsTest.vcxproj -> C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Debug\PEEL.exe

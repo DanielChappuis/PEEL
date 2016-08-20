@@ -67,7 +67,7 @@ static bool CreateDefaultEnvironment(Pint& pint)
 {
 //return true;
 	PINT_BOX_CREATE BoxDesc;
-	BoxDesc.mExtents = Point(20.0f, 10.0f, 20.0f);
+	BoxDesc.mExtents = Point(150.0f, 10.0f, 150.0f);
 	BoxDesc.mRenderer = CreateBoxRenderer(BoxDesc.mExtents);
 	BoxDesc.mRenderer->SetShadows(false);
 

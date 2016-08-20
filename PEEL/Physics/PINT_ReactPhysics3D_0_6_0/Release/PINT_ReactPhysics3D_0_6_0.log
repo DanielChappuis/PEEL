@@ -5,6 +5,22 @@
   Using ICE Meshmerizer
   Using ICE ImageWork
   Using ICE GUI
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xkeycheck.h(246): warning C4005: 'override': macro redefinition
-  c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\IcePreprocessor.h(116): note: see previous definition of 'override'
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xkeycheck.h(250): fatal error C1189: #error:  The C++ Standard Library forbids macroizing keywords. Enable warning C4005 to find the forbidden macro.
+c:\users\daniel\desktop\git2\reactphysics3d\src\collision/CollisionDetection.h(235): warning C4265: 'reactphysics3d::CollisionDetection': class has virtual functions, but destructor is not virtual
+           instances of this class may not be destructed correctly
+c:\users\daniel\desktop\git2\reactphysics3d\src\collision/shapes/ConcaveMeshShape.h(101): warning C4265: 'reactphysics3d::ConcaveMeshRaycastCallback': class has virtual functions, but destructor is not virtual
+           instances of this class may not be destructed correctly
+c:\users\daniel\desktop\git2\reactphysics3d\src\collision/shapes/HeightFieldShape.h(227): warning C4244: 'return': conversion from 'double' to 'reactphysics3d::decimal', possible loss of data
+c:\users\daniel\desktop\git2\reactphysics3d\src\collision/shapes/HeightFieldShape.h(235): warning C4244: 'return': conversion from 'reactphysics3d::decimal' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cmath(30): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  PINT_Common.cpp
+  PINT_CommonReactPhysics3D.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1181): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  PINT_ReactPhysics3D_0_6_0.cpp
+PINT_ReactPhysics3D_0_6_0.cpp(406): warning C4018: '<': signed/unsigned mismatch
+PINT_ReactPhysics3D_0_6_0.cpp(430): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector(1181): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  Generating Code...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Release\PINT_ReactPhysics3D_0_6_0.dll) does not match the Linker's OutputFile property value (C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Physics\PINT_ReactPhysics3D_0_6_0\Release\PINT_ReactPhysics3D_0_6_0.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Release\PINT_ReactPhysics3D_0_6_0.lib and object C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Release\PINT_ReactPhysics3D_0_6_0.exp
+  PINT_ReactPhysics3D_0_6_0.vcxproj -> C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Release\PINT_ReactPhysics3D_0_6_0.dll
+          1 file(s) copied.
