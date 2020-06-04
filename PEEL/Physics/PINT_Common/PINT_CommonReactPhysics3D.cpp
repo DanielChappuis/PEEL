@@ -241,15 +241,17 @@ udword ReactPhysics3D::BatchCapsuleSweeps(PintSQThreadContext context, udword nb
 
 udword ReactPhysics3D::CreateConvexObject(const PINT_CONVEX_DATA_CREATE& desc)
 {
-	rp3d::ConvexMeshShape* shape = new rp3d::ConvexMeshShape(&desc.mVerts->x, desc.mNbVerts, sizeof(Point));
-	ASSERT(shape);
+	//rp3d::ConvexMeshShape* shape = new rp3d::ConvexMeshShape(&desc.mVerts->x, desc.mNbVerts, sizeof(Point));
+	//ASSERT(shape);
 
-	/*if(desc.mRenderer)
-		shape->setUserPointer(desc.mRenderer);*/
+	///*if(desc.mRenderer)
+	//	shape->setUserPointer(desc.mRenderer);*/
 
-	const udword CurrentSize = mConvexObjects.size();
-	mConvexObjects.push_back(shape);
-	return CurrentSize;
+	//const udword CurrentSize = mConvexObjects.size();
+	//mConvexObjects.push_back(shape);
+	//return CurrentSize;
+
+	return 1;
 }
 
 udword ReactPhysics3D::BatchConvexSweeps(PintSQThreadContext context, udword nb, PintRaycastHit* dest, const PintConvexSweepData* sweeps)
@@ -316,7 +318,7 @@ void ReactPhysics3D::ApplyActionAtPoint(PintObjectHandle handle, PintActionType 
 {
 	rp3d::RigidBody* body = (rp3d::RigidBody*)handle;
 
-	if(body->getType() == rp3d::STATIC || body->getType() == rp3d::DYNAMIC)
+	if(body->getType() == rp3d::BodyType::STATIC || body->getType() == rp3d::BodyType::DYNAMIC)
 		return;
 
 	rp3d::Transform trans = body->getTransform();

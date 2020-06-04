@@ -19,7 +19,7 @@
 		virtual											~ReactPhysics3D();
 
 		// Pint
-		virtual	const char*								GetName()				const	{ return "ReactPhysics3D 0.6.0";	}
+		virtual	const char*								GetName()				const	{ return "ReactPhysics3D 0.6.0_sat_opti";	}
 		virtual	void									GetCaps(PintCaps& caps)	const;
 		virtual	void									Init(const PINT_WORLD_CREATE& desc);
 		virtual	void									SetGravity(const Point& gravity);
@@ -62,6 +62,8 @@
 				};
 
 				std::vector<rp3d::CollisionShape*>		mCollisionShapes;
+				std::vector<rp3d::PolygonVertexArray*>  mPolygonVertexArrays;
+				std::vector<rp3d::PolyhedronMesh*>      mPolyhedronMeshes;
 				std::vector<rp3d::SphereShape*>			mSphereShapes;
 				std::vector<InternalBoxShape>			mBoxShapes;
 				std::vector<rp3d::CapsuleShape*>		mCapsuleShapes;

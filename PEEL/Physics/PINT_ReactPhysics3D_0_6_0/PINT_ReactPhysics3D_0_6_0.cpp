@@ -210,7 +210,7 @@ void ReactPhysics3D::GetCaps(PintCaps& caps) const
 	caps.mSupportKinematics				= false;
 	caps.mSupportCollisionGroups		= false;
 	caps.mSupportCompounds				= true;
-	caps.mSupportConvexes				= true;
+	caps.mSupportConvexes				= false;
 	caps.mSupportMeshes					= true;
 	caps.mSupportSphericalJoints		= false;
 	caps.mSupportHingeJoints			= false;
@@ -315,6 +315,22 @@ void ReactPhysics3D::Close()
 		DELETESINGLE(shape);
 	}
 
+	//delete polygon vertex arrays
+	for (udword j = 0; j<mPolygonVertexArrays.size(); j++)
+	{
+		rp3d::PolygonVertexArray* array = mPolygonVertexArrays[j];
+		DELETESINGLE(array);
+	}
+
+	//delete polygon meshes
+	for (udword j = 0; j<mPolyhedronMeshes.size(); j++)
+	{
+		rp3d::PolyhedronMesh* mesh = mPolyhedronMeshes[j];
+		DELETESINGLE(mesh);
+	}
+
+	
+	
 	for(udword j=0;j<mConvexObjects.size();j++)
 	{
 		rp3d::ConvexMeshShape* shape = mConvexObjects[j];
@@ -429,9 +445,13 @@ std::vector<rp3d::Vector3> ReactPhysics3D::computeContactPointsOfWorld() const {
 		// For each contact point of the manifold
 		for (int i = 0; i<manifold->getNbContactPoints(); i++) {
 
-			rp3d::ContactPoint* contactPoint = manifold->getContactPoint(i);
-			rp3d::Vector3 point = contactPoint->getWorldPointOnBody1();
-			contactPoints.push_back(point);
+			rp3d::ContactPoint* contactPoint = manifold->getContactPoints();
+			while (contactPoint != nullptr) {
+				rp3d::Vector3 point = manifold->getShape1()->getLocalToWorldTransform() * contactPoint->getLocalPointOnShape1();
+				contactPoints.push_back(point);
+
+				contactPoint = contactPoint->getNext();
+			}
 		}
 
 	}
@@ -491,7 +511,7 @@ rp3d::BoxShape* ReactPhysics3D::FindBoxShape(const PINT_BOX_CREATE& create)
 	rp3d::Vector3 extents = ToRP3DVector3(create.mExtents);
 	//extents -= rp3d::Vector3(gCollisionMargin, gCollisionMargin, gCollisionMargin);
 
-	rp3d::BoxShape* shape = new rp3d::BoxShape(extents, gCollisionMargin);
+	rp3d::BoxShape* shape = new rp3d::BoxShape(extents);
 	ASSERT(shape);
 	InternalBoxShape Internal;
 	Internal.mShape		= shape;
@@ -536,32 +556,44 @@ rp3d::CapsuleShape* ReactPhysics3D::FindCapsuleShape(const PINT_CAPSULE_CREATE& 
 
 rp3d::ConvexMeshShape* ReactPhysics3D::FindConvexShape(const PINT_CONVEX_CREATE& create)
 {
-	// TODO : Find a way to handle shared convex mesh shape here
-	/*
-	if(gShareShapes)
-	{
-		const int size = mConvexShapes.size();
-		for(int i=0;i<size;i++)
-		{
-			rp3d::ConvexMeshShape* CurrentShape = mConvexShapes[i];
-			if(CurrentShape->get==create.mRenderer)
-			{
-				return CurrentShape;
-			}
-		}
-	}
-	*/
+	//// TODO : Find a way to handle shared convex mesh shape here
+	///*
+	//if(gShareShapes)
+	//{
+	//	const int size = mConvexShapes.size();
+	//	for(int i=0;i<size;i++)
+	//	{
+	//		rp3d::ConvexMeshShape* CurrentShape = mConvexShapes[i];
+	//		if(CurrentShape->get==create.mRenderer)
+	//		{
+	//			return CurrentShape;
+	//		}
+	//	}
+	//}
+	//*/
+	//create.
+	//rp3d::PolygonVertexArray* polygonVertexArray =
+	//	new rp3d::PolygonVertexArray(create.mNbVerts, &create.mVerts->x, sizeof(Point),
+	//		&(mIndices[0][0]), sizeof(int),
+	//		getNbFaces(0), mPolygonFaces,
+	//		rp3d::PolygonVertexArray::VertexDataType::VERTEX_FLOAT_TYPE,
+	//		rp3d::PolygonVertexArray::IndexDataType::INDEX_INTEGER_TYPE);
 
+	//// Create the polyhedron mesh
+	//rp3d::PolyhedronMesh polyhedronMesh = new rp3d::PolyhedronMesh(polygonVertexArray);
 
-	rp3d::ConvexMeshShape* shape = new rp3d::ConvexMeshShape(&create.mVerts->x, create.mNbVerts, sizeof(Point));
-	ASSERT(shape);
-	mConvexShapes.push_back(shape);
-	mCollisionShapes.push_back(shape);
+	//rp3d::ConvexMeshShape* shape = new rp3d::ConvexMeshShape(polyhedronMesh);
+	//ASSERT(shape);
+	//mConvexShapes.push_back(shape);
+	//mCollisionShapes.push_back(shape);
+	//mPolygonVertexArrays.push_back(polygonVertexArray);
+	//mPolyhedronMeshes.push_back(polyhedronMesh);
 
-	/*if(create.mRenderer)
-		shape->setUserPointer(create.mRenderer);*/
+	///*if(create.mRenderer)
+	//	shape->setUserPointer(create.mRenderer);*/
 
-	return shape;
+	//return shape;
+	return nullptr;
 }
 
 rp3d::CollisionShape* ReactPhysics3D::CreateReactPhysics3DShape(const PINT_SHAPE_CREATE& desc)
@@ -582,11 +614,11 @@ rp3d::CollisionShape* ReactPhysics3D::CreateReactPhysics3DShape(const PINT_SHAPE
 		const PINT_CAPSULE_CREATE& CapsuleCreate = static_cast<const PINT_CAPSULE_CREATE&>(desc);
 		collisionShape = FindCapsuleShape(CapsuleCreate);
 	}
-	else if(desc.mType==PINT_SHAPE_CONVEX)
+	/*else if(desc.mType==PINT_SHAPE_CONVEX)
 	{
 		const PINT_CONVEX_CREATE& ConvexCreate = static_cast<const PINT_CONVEX_CREATE&>(desc);
 		collisionShape = FindConvexShape(ConvexCreate);
-	}
+	}*/
 	else if(desc.mType==PINT_SHAPE_MESH)
 	{
 		const PINT_MESH_CREATE& MeshCreate = static_cast<const PINT_MESH_CREATE&>(desc);
@@ -597,8 +629,8 @@ rp3d::CollisionShape* ReactPhysics3D::CreateReactPhysics3DShape(const PINT_SHAPE
         rp3d::TriangleVertexArray* vertexArray =
                 new rp3d::TriangleVertexArray(MeshCreate.mSurface.mNbVerts, (float*)&MeshCreate.mSurface.mVerts->x, sizeof(Point),
                                               MeshCreate.mSurface.mNbFaces, (int*)MeshCreate.mSurface.mDFaces, sizeof(udword),
-                                              rp3d::TriangleVertexArray::VERTEX_FLOAT_TYPE,
-                                              rp3d::TriangleVertexArray::INDEX_INTEGER_TYPE);
+                                              rp3d::TriangleVertexArray::VertexDataType::VERTEX_FLOAT_TYPE,
+                                              rp3d::TriangleVertexArray::IndexDataType::INDEX_INTEGER_TYPE);
 
 		rp3d::TriangleMesh* triangleMesh = new rp3d::TriangleMesh();
         // Add the triangle vertex array of the subpart to the triangle mesh
@@ -689,7 +721,7 @@ PintObjectHandle ReactPhysics3D::CreateObject(const PINT_OBJECT_CREATE& desc)
 	}
 
 	if (!isDynamic) {
-		body->setType(rp3d::STATIC);
+		body->setType(rp3d::BodyType::STATIC);
 	}
 
 	//using motionstate is recommended, it provides interpolation capabilities, and only synchronizes 'active' objects

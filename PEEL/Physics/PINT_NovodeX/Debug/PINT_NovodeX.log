@@ -1,12 +1,2 @@
-﻿  stdafx.cpp
-  Using ICE Core
-  Using ICE Maths
-  Using CONTACT
-  Using ICE Meshmerizer
-  Using ICE ImageWork
-  Using ICE GUI
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(210): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
-  PINT_NovodeX.cpp
+﻿  PINT_NovodeX.cpp
 c:\users\daniel\desktop\git2\peel\peel\physics\pint_novodex\PINT_Novodex.h(13): fatal error C1083: Cannot open include file: 'NxArray.h': No such file or directory
-  PINT_Common.cpp
-  Generating Code...
