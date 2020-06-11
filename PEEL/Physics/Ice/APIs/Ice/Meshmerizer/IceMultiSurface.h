@@ -44,21 +44,21 @@
 		virtual						bool				DiscardExtraSurfaces();
 		virtual						bool				DiscardFaceProperties();
 			// Resets the surface
-		override(VertexCloud)		bool				Reset();
+		override2(VertexCloud)		bool				Reset();
 
 		// Surface operations
 			// Keeps the face! (french humour)
-		override(IndexedSurface)	bool				KeepFaces(const Container& faces);
+		override2(IndexedSurface)	bool				KeepFaces(const Container& faces);
 			// Optimization
-		override(IndexedSurface)	bool				Optimize();
-		override(IndexedSurface)	bool				WeldVertices(float threshold=0.1f);
+		override2(IndexedSurface)	bool				Optimize();
+		override2(IndexedSurface)	bool				WeldVertices(float threshold=0.1f);
 			// Subdivision
-		override(IndexedSurface)	bool				Subdivide(SubdivScheme& scheme, bool use_cache=true, SubdivHistory* history=null);
+		override2(IndexedSurface)	bool				Subdivide(SubdivScheme& scheme, bool use_cache=true, SubdivHistory* history=null);
 			// Merge a surface with another (not a boolean operation)
 									bool				Merge(const MultiSurface* surface, const Matrix4x4* world=null, bool extra_surfaces=true);
 
 			// Flips the surface
-		override(IndexedSurface)	bool				Flip();
+		override2(IndexedSurface)	bool				Flip();
 
 			// Smoothing groups
 		virtual						bool				SetUniqueSmoothingGroup();

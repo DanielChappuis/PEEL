@@ -119,7 +119,7 @@ END_TEST(SingleTriangle)
 #define IMPLEMENT_STATIC_MESH_SCENE(name, desc, filename, tessellation)	\
 START_TEST(name, CATEGORY_STATIC_SCENE, desc)							\
 																		\
-	virtual bool name::CommonSetup()									\
+	virtual bool CommonSetup()									\
 	{																	\
 		TestBase::CommonSetup();										\
 		LoadMeshesFromFile_(*this, filename, null, false, tessellation);\
@@ -127,7 +127,7 @@ START_TEST(name, CATEGORY_STATIC_SCENE, desc)							\
 		return true;													\
 	}																	\
 																		\
-	virtual bool name::Setup(Pint& pint, const PintCaps& caps)			\
+	virtual bool Setup(Pint& pint, const PintCaps& caps)			\
 	{																	\
 		return CreateMeshesFromRegisteredSurfaces(pint, caps, *this);	\
 	}

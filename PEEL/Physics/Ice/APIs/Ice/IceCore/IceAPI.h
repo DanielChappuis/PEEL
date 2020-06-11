@@ -27,7 +27,7 @@
 		virtual		~current_class()	{}												\
 		DECLARE_RTTI(current_class, base_class)											\
 		DECLARE_FIELDS																	\
-		override(Parsable) bool Parameter(const char* line, const ParameterBlock& pb)	\
+		override2(Parsable) bool Parameter(const char* line, const ParameterBlock& pb)	\
 		{																				\
 			if(current_class::SetFrom(pb))	return false;								\
 			return base_class::Parameter(line, pb);										\

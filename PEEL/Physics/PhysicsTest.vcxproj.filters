@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\HACD">
+      <UniqueIdentifier>{e1b2a569-80b7-4219-9149-11a208384b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{bf677441-4a67-4eb8-96e8-e69d50ca5286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Loaders">
+      <UniqueIdentifier>{eb328b1d-c09e-4e7e-b3e2-46c5394f341e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\GUI">
+      <UniqueIdentifier>{0310c190-d09d-42b6-ba5b-338c190b72f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Support">
+      <UniqueIdentifier>{8328201f-3da5-4662-b9b1-241f9c97caa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Test scenes">
+      <UniqueIdentifier>{861c513e-5a38-4858-8945-e58990f01138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Test scenes\Scene queries">
+      <UniqueIdentifier>{5e85f3b9-7b4c-4353-b361-006a8c1d4529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Test scenes\WIP">
+      <UniqueIdentifier>{60d36b70-79c7-4e28-ba8d-cb055ebcae4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HACD\hacdCircularList.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="HACD\hacdGraph.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="HACD\hacdHACD.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="HACD\hacdICHull.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="HACD\hacdManifoldMesh.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="HACD\hacdVector.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="HACD\hacdVersion.h">
+      <Filter>Source Files\HACD</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomICEAllocator.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Pint.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PintDef.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PintObjectsManager.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PintRender.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PintSQ.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PintTiming.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingTest.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RepX_Tools.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceRay.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceManager.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSelector.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TrashCache.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader_Bin.h">
+      <Filter>Source Files\Main\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader_Rays.h">
+      <Filter>Source Files\Main\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader_RepX.h">
+      <Filter>Source Files\Main\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI_Helpers.h">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="RaytracingWindow.h">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleWindow.h">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="FileFinder.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="GLFontData.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="GLFontRenderer.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="GLVSync.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="IceBunny.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="MyConvex.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralTrack.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="QPCTime.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScenes.h">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScenesHelpers.h">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HACD\hacdCircularList.inl">
+      <Filter>Source Files\HACD</Filter>
+    </None>
+    <None Include="HACD\hacdVector.inl">
+      <Filter>Source Files\HACD</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HACD\hacdGraph.cpp">
+      <Filter>Source Files\HACD</Filter>
+    </ClCompile>
+    <ClCompile Include="HACD\hacdHACD.cpp">
+      <Filter>Source Files\HACD</Filter>
+    </ClCompile>
+    <ClCompile Include="HACD\hacdICHull.cpp">
+      <Filter>Source Files\HACD</Filter>
+    </ClCompile>
+    <ClCompile Include="HACD\hacdManifoldMesh.cpp">
+      <Filter>Source Files\HACD</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PEEL.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Pint.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PintObjectsManager.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PintRender.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PintSQ.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PintTiming.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingTest.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RepX_Tools.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceManager.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSelector.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TrashCache.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader_Bin.cpp">
+      <Filter>Source Files\Main\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader_Rays.cpp">
+      <Filter>Source Files\Main\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader_RepX.cpp">
+      <Filter>Source Files\Main\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI_Helpers.cpp">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingWindow.cpp">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleData.cpp">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleWindow.cpp">
+      <Filter>Source Files\Main\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvexHull2D.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="FileFinder.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="GLFontRenderer.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="GLVSync.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="IceBunny.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="MyConvex.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralTrack.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="QPCTime.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\Main\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_API.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Articulations.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Behavior.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_CCD.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_ContactGeneration.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Cylinders.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Joints.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Kinematics.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Performance.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_StaticScene.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Vehicles.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenesHelpers.cpp">
+      <Filter>Source Files\Main\Test scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Overlap.cpp">
+      <Filter>Source Files\Main\Test scenes\Scene queries</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Raycast.cpp">
+      <Filter>Source Files\Main\Test scenes\Scene queries</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Sweep.cpp">
+      <Filter>Source Files\Main\Test scenes\Scene queries</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Bulldozer_WIP.cpp">
+      <Filter>Source Files\Main\Test scenes\WIP</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScenes_Joints_WIP.cpp">
+      <Filter>Source Files\Main\Test scenes\WIP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\How to build.txt" />
+    <Text Include="..\Known issues &amp; TODO.txt" />
+    <Text Include="..\Release notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PEEL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PEEL.rc" />
+  </ItemGroup>
+</Project>

@@ -636,13 +636,13 @@ START_VEHICLE_TEST(BulldozerTest, CATEGORY_WIP, gDesc_BulldozerTest)
 	CylinderMesh mInsideCylinder;
 	CylinderMesh mOutsideCylinder;
 
-	virtual	void BulldozerTest::GetSceneParams(PINT_WORLD_CREATE& desc)
+	virtual	void GetSceneParams(PINT_WORLD_CREATE& desc)
 	{
 		VehicleBase::GetSceneParams(desc);
 		desc.mCamera[0] = CameraPose(Point(8.54f, 4.57f, 7.70f), Point(-0.66f, -0.28f, -0.69f));
 	}
 
-	virtual	bool BulldozerTest::CommonSetup()
+	virtual	bool CommonSetup()
 	{
 		mAcceleration			= 200.0f;
 		mMaxAngularVelocity		= 10.0f;
@@ -666,14 +666,14 @@ START_VEHICLE_TEST(BulldozerTest, CATEGORY_WIP, gDesc_BulldozerTest)
 		return VehicleBase::CommonSetup();
 	}
 
-	virtual	void BulldozerTest::CommonRelease()
+	virtual	void CommonRelease()
 	{
 		mInsideCylinder.Reset();
 		mOutsideCylinder.Reset();
 		VehicleBase::CommonRelease();
 	}
 
-	virtual bool BulldozerTest::Setup(Pint& pint, const PintCaps& caps)
+	virtual bool Setup(Pint& pint, const PintCaps& caps)
 	{
 		CreateMeshesFromRegisteredSurfaces(pint, caps, *this, &mHighFrictionMaterial);
 
@@ -915,7 +915,7 @@ START_VEHICLE_TEST(BulldozerTest, CATEGORY_WIP, gDesc_BulldozerTest)
 		return true;
 	}
 
-	virtual udword BulldozerTest::Update(Pint& pint, float dt)
+	virtual udword Update(Pint& pint, float dt)
 	{
 		VehicleData* UserData = (VehicleData*)pint.mUserData;
 		if(!UserData)

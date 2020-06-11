@@ -1,0 +1,113 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  TrashCache.cpp
+  TitleWindow.cpp
+  TitleData.cpp
+  TestSelector.cpp
+  TestScenes_Vehicles.cpp
+  TestScenes_Sweep.cpp
+  TestScenes_StaticScene.cpp
+  TestScenes_Raycast.cpp
+  TestScenes_Performance.cpp
+  TestScenes_Overlap.cpp
+  TestScenes_Kinematics.cpp
+  TestScenes_Joints_WIP.cpp
+  TestScenes_Joints.cpp
+  TestScenes_Cylinders.cpp
+  TestScenes_ContactGeneration.cpp
+  TestScenes_CCD.cpp
+  TestScenes_Bulldozer_WIP.cpp
+  TestScenes_Behavior.cpp
+  TestScenes_Articulations.cpp
+  TestScenes_API.cpp
+  Generating Code...
+  Compiling...
+  TestScenesHelpers.cpp
+  TestScenes.cpp
+  SurfaceManager.cpp
+  Script.cpp
+  RepX_Tools.cpp
+  Render.cpp
+  RaytracingWindow.cpp
+  RaytracingTest.cpp
+  Random.cpp
+  QPCTime.cpp
+  ProgressBar.cpp
+  ProceduralTrack.cpp
+  PintTiming.cpp
+  PintSQ.cpp
+  PintRender.cpp
+  PintObjectsManager.cpp
+  Pint.cpp
+  PEEL.cpp
+  MyConvex.cpp
+  Loader_RepX.cpp
+  Generating Code...
+  Compiling...
+  Loader_Rays.cpp
+  Loader_Bin.cpp
+  IceBunny.cpp
+  GUI_Helpers.cpp
+  GLVSync.cpp
+  GLFontRenderer.cpp
+  FileFinder.cpp
+  Cylinder.cpp
+  ConvexHull2D.cpp
+  CameraManager.cpp
+  Camera.cpp
+  Generating Code...
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  hacdManifoldMesh.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(412,1): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(405): message : while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+D:\Development\Git\PEEL\PEEL\Physics\HACD\hacdManifoldMesh.cpp(90): message : see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(642): message : see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+  hacdICHull.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(748,1): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(708): message : see reference to function template instantiation 'HACD::CircularListElement<HACD::TMMTriangle> **std::vector<HACD::CircularListElement<HACD::TMMTriangle> *,std::allocator<HACD::CircularListElement<HACD::TMMTriangle> *>>::_Emplace_reallocate<const _Ty&>(HACD::CircularListElement<HACD::TMMTriangle> **const ,const _Ty &)' being compiled
+          with
+          [
+              _Ty=HACD::CircularListElement<HACD::TMMTriangle> *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(708): message : see reference to function template instantiation 'HACD::CircularListElement<HACD::TMMTriangle> **std::vector<HACD::CircularListElement<HACD::TMMTriangle> *,std::allocator<HACD::CircularListElement<HACD::TMMTriangle> *>>::_Emplace_reallocate<const _Ty&>(HACD::CircularListElement<HACD::TMMTriangle> **const ,const _Ty &)' being compiled
+          with
+          [
+              _Ty=HACD::CircularListElement<HACD::TMMTriangle> *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(717): message : see reference to function template instantiation 'void std::vector<HACD::CircularListElement<HACD::TMMTriangle> *,std::allocator<HACD::CircularListElement<HACD::TMMTriangle> *>>::emplace_back<const _Ty&>(const _Ty &)' being compiled
+          with
+          [
+              _Ty=HACD::CircularListElement<HACD::TMMTriangle> *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(716): message : while compiling class template member function 'void std::vector<HACD::CircularListElement<HACD::TMMTriangle> *,std::allocator<HACD::CircularListElement<HACD::TMMTriangle> *>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=HACD::CircularListElement<HACD::TMMTriangle> *
+          ]
+D:\Development\Git\PEEL\PEEL\Physics\HACD\hacdICHull.cpp(145): message : see reference to function template instantiation 'void std::vector<HACD::CircularListElement<HACD::TMMTriangle> *,std::allocator<HACD::CircularListElement<HACD::TMMTriangle> *>>::push_back(const _Ty &)' being compiled
+          with
+          [
+              _Ty=HACD::CircularListElement<HACD::TMMTriangle> *
+          ]
+D:\Development\Git\PEEL\PEEL\Physics\HACD\hacdICHull.h(107): message : see reference to class template instantiation 'std::vector<HACD::CircularListElement<HACD::TMMTriangle> *,std::allocator<HACD::CircularListElement<HACD::TMMTriangle> *>>' being compiled
+  hacdHACD.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(412,1): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(405): message : while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+D:\Development\Git\PEEL\PEEL\Physics\HACD\hacdHACD.cpp(676): message : see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(642): message : see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+  hacdGraph.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(322,1): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(315): message : while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+D:\Development\Git\PEEL\PEEL\Physics\HACD\hacdGraph.cpp(211): message : see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\ostream(642): message : see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1288,5): warning MSB8012: TargetPath(D:\Development\Git\PEEL\PEEL\Debug\PEEL.exe) does not match the Linker's OutputFile property value (D:\Development\Git\PEEL\PEEL\Build\PEEL_DEBUG.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1290,5): warning MSB8012: TargetName(PEEL) does not match the Linker's OutputFile property value (PEEL_DEBUG). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  PhysicsTest.vcxproj -> D:\Development\Git\PEEL\PEEL\Debug\PEEL.exe

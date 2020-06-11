@@ -1,0 +1,18 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  PINT_Stats.cpp
+  PINT_Common.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1274,5): warning MSB8012: TargetPath(D:\Development\Git\PEEL\PEEL\Debug\PINT_Stats.dll) does not match the Linker's OutputFile property value (D:\Development\Git\PEEL\PEEL\Physics\PINT_Stats\Debug\PINT_Stats_D.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1276,5): warning MSB8012: TargetName(PINT_Stats) does not match the Linker's OutputFile property value (PINT_Stats_D). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library D:\Development\Git\PEEL\PEEL\Debug\PINT_Stats.lib and object D:\Development\Git\PEEL\PEEL\Debug\PINT_Stats.exp
+  PINT_Stats.vcxproj -> D:\Development\Git\PEEL\PEEL\Debug\PINT_Stats.dll
+  Copying DLL to Build folder...
+          1 fichier(s) copié(s).

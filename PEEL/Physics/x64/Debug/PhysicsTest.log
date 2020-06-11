@@ -1,0 +1,145 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+  Using ICE Core
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(57,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(57,8): error C2065: 'push': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(57,13): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(57,13): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(58,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(58,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(58,8): error C2065: 'push': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(58,13): error C2146: syntax error: missing ';' before identifier 'ecx'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(58,13): error C2065: 'ecx': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(59,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(59,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(59,8): error C2065: 'push': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(59,13): error C2146: syntax error: missing ';' before identifier 'edi'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(59,13): error C2065: 'edi': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(60,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(60,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(60,8): error C2065: 'mov': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(60,12): error C2146: syntax error: missing ';' before identifier 'edi'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(60,12): error C2065: 'edi': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(61,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(61,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(61,8): error C2065: 'mov': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(61,12): error C2146: syntax error: missing ';' before identifier 'ecx'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(61,12): error C2065: 'ecx': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(62,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(62,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(62,8): error C2065: 'mov': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(62,12): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(62,12): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(63,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(63,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(63,8): error C2065: 'rep': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(63,12): error C2146: syntax error: missing ';' before identifier 'stosd'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(63,12): error C2065: 'stosd': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(64,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(64,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(64,8): error C2065: 'pop': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(64,12): error C2146: syntax error: missing ';' before identifier 'edi'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(64,12): error C2065: 'edi': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(65,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(65,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(65,8): error C2065: 'pop': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(65,12): error C2146: syntax error: missing ';' before identifier 'ecx'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(65,12): error C2065: 'ecx': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(66,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(66,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(66,8): error C2065: 'pop': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(66,12): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(66,12): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMemoryMacros.h(67,2): error C2143: syntax error: missing ';' before '}'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(363,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(363,8): error C2065: 'fld': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(363,13): error C2146: syntax error: missing ';' before identifier 'Local'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(364,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(363,13): warning C4555: result of expression not used
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(364,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(364,8): error C2065: 'fsincos': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(365,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(365,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(365,8): error C2065: 'fstp': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(365,13): error C2146: syntax error: missing ';' before identifier 'LocalCos'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(366,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(365,13): warning C4555: result of expression not used
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(366,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(366,8): error C2065: 'fstp': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(366,13): error C2146: syntax error: missing ';' before identifier 'LocalSin'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(381,3): error C2146: syntax error: missing ';' before identifier 'c'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(366,13): warning C4555: result of expression not used
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(400,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(400,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(410,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(410,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(415,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(415,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(420,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(420,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(426,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(426,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(431,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(431,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(437,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(437,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(442,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(442,3): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRandom.h(83,9): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRandom.h(83,1): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRandom.h(89,9): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRandom.h(89,1): error C2059: syntax error: 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(52,4): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(53,6): error C2065: 'mov': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(53,22): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(53,22): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(54,6): error C2146: syntax error: missing ';' before identifier 'sub'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(54,6): error C2065: 'sub': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(54,22): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(54,22): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(55,6): error C2146: syntax error: missing ';' before identifier 'sar'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(55,6): error C2065: 'sar': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(55,22): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(55,22): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(56,6): error C2146: syntax error: missing ';' before identifier 'add'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(56,6): error C2065: 'add': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(56,22): error C2146: syntax error: missing ';' before identifier 'eax'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(56,22): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(57,6): error C2146: syntax error: missing ';' before identifier 'mov'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(57,6): error C2065: 'mov': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(57,32): error C2065: 'eax': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(58,4): error C2143: syntax error: missing ';' before '}'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(231,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(231,8): error C2065: 'fld': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(232,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(232,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(232,8): error C2065: 'fld': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(233,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(233,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(233,3): error C2065: '_emit': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(233,3): error C2143: syntax error: missing ';' before 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(233,3): warning C4555: result of expression not used
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(234,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(234,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(234,3): error C2065: '_emit': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(234,3): error C2143: syntax error: missing ';' before 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(234,3): warning C4555: result of expression not used
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(235,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(235,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(235,8): error C2065: 'fstp': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(236,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(236,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(236,8): error C2065: 'fcomp': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(237,3): error C2143: syntax error: missing ';' before 'return'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(244,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(244,8): error C2065: 'fld': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(245,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(245,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(245,8): error C2065: 'fld': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(246,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(246,3): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(246,3): error C2065: '_emit': undeclared identifier
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(246,3): error C2143: syntax error: missing ';' before 'constant'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(246,3): warning C4555: result of expression not used
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(247,3): error C2143: syntax error: missing ';' before '__asm'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(247,3): fatal error C1003: error count exceeds 100; stopping compilation

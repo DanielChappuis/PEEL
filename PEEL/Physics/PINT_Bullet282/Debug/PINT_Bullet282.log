@@ -1,0 +1,183 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+D:\Development\Git\PEEL\PEEL\Physics\PINT_Bullet282\stdafx.h(14,10): warning C4464: relative include path contains '..'
+  Using ICE Core
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IcePreprocessor.h(57,160): warning C4619: #pragma warning: there is no warning number '4529'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceOldMM.h(38,2): warning C4820: 'MemoryManager': '3' bytes padding added after data member 'MemoryManager::mIsAligned'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(31,23): warning C4365: 'initializing': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(44,11): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(52,12): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(60,13): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(73,64): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(82,30): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(85,17): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(94,30): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCodeSize.h(102,16): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCPUID.h(24,2): warning C4820: 'CPUIDINFO': '2' bytes padding added after data member 'CPUIDINFO::ITLB'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(89,29): warning C4365: 'argument': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(153,72): warning C4365: 'return': conversion from 'sdword' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(180,87): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceUtils.h(401,29): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(36,38): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(109,63): warning C4365: 'initializing': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceFPU.h(391,33): warning C4365: 'return': conversion from 'udword' to 'sdword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceAllocator.h(42,119): warning C4365: 'argument': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceAllocator.h(44,121): warning C4365: 'argument': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceContainer.h(233,41): warning C4365: 'return': conversion from 'const udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceBitArray.h(56,49): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceBitArray.h(62,1): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCustomArray.h(372,2): warning C4820: 'IceCore::CustomArray': '2' bytes padding added after data member 'IceCore::CustomArray::mBitMask'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCustomArray.h(184,1): warning C4365: 'initializing': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceInstrumentTrace.h(12,14): warning C4820: 'IceCore::InstrumentTrace': '3' bytes padding added after data member 'IceCore::InstrumentTrace::dataLinked'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceInstrumentTrace.h(21,51): warning C4365: 'argument': conversion from 'int' to 'size_t', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRevisitedRadix.h(61,2): warning C4820: 'IceCore::RadixSort': '3' bytes padding added after data member 'IceCore::RadixSort::mDeleteRanks'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRadix3Passes.h(52,2): warning C4820: 'IceCore::RadixSort3': '3' bytes padding added after data member 'IceCore::RadixSort3::mDeleteRanks'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceTimestampManager.h(27,68): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceProfiler.h(222,2): warning C4820: 'IceCore::Profiler': '2' bytes padding added after data member 'IceCore::Profiler::mEndingPending'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceDynaBlock.h(48,2): warning C4625: 'IceCore::DataBlock': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceDynaBlock.h(48,2): warning C4626: 'IceCore::DataBlock': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCustomList.h(47,2): warning C4625: 'IceCore::CustomList': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCustomList.h(47,2): warning C4626: 'IceCore::CustomList': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceKernel.h(90,10): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceSmartContainer.h(194,2): warning C4820: 'IceCore::SmartContainer': '3' bytes padding added after data member 'IceCore::SmartContainer::mIsSorted'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceSmartContainer.h(194,2): warning C4625: 'IceCore::SmartContainer': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceSmartContainer.h(194,2): warning C4626: 'IceCore::SmartContainer': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceSmartContainer.h(37,21): warning C4263: 'udword IceCore::SmartContainer::GetPriority(IceCore::Cell *)': member function does not override any base class virtual member function
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceSmartContainer.h(194,2): warning C4264: 'udword IceCore::Cell::GetPriority(void)': no override available for virtual member function from base 'IceCore::Cell'; function is hidden
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCell.h(384): message : see declaration of 'IceCore::Cell::GetPriority'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCell.h(116): message : see declaration of 'IceCore::Cell'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceParser.h(138,2): warning C4820: 'IceCore::ParameterBlock': '3' bytes padding added after data member 'IceCore::ParameterBlock::mCheckParams'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceParser.h(176,2): warning C4820: 'IceCore::ReadOnlyParameterBlock': '3' bytes padding added after data member 'IceCore::ReadOnlyParameterBlock::mCheckParams'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceParser.h(204,10): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceTimer.h(73,29): warning C4820: 'IceCore::Timer': '4' bytes padding added after data member 'IceCore::Timer::mFrames'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceTimer.h(81,2): warning C4820: 'IceCore::Timer': '3' bytes padding added after data member 'IceCore::Timer::mPerformanceTimerEnabled'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceHashing.h(75,47): warning C4365: 'argument': conversion from 'udword' to 'int', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceHashing.h(75,48): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IcePublishSubscribe.h(62,2): warning C4625: 'IceCore::IceEvent': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IcePublishSubscribe.h(62,2): warning C4626: 'IceCore::IceEvent': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\#Plugins\FlexineSDK\FlexineSDK.h(75,2): warning C4625: 'IceCore::IceInterface': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\#Plugins\FlexineSDK\FlexineSDK.h(75,2): warning C4626: 'IceCore::IceInterface': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\#Plugins\FlexineSDK\FlexineSDK.h(119,2): warning C4625: 'IceCore::ImportExport': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\#Plugins\FlexineSDK\FlexineSDK.h(119,2): warning C4626: 'IceCore::ImportExport': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\#Plugins\FlexineSDK\FlexineSDK.h(178,2): warning C4625: 'IceCore::DataPacker': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\#Plugins\FlexineSDK\FlexineSDK.h(178,2): warning C4626: 'IceCore::DataPacker': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCallbacks.h(78,2): warning C4820: 'IceCore::ErrorParams': '3' bytes padding added after data member 'IceCore::ErrorParams::mUpdateLog'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceRequest.h(50,3): warning C4820: 'IceCore::BooleanQueryParams': '3' bytes padding added after data member 'IceCore::BooleanQueryParams::mAnswer'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceAPI.h(53,8): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceAPI.h(55,46): warning C4365: 'return': conversion from 'const udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceGDIApp.h(37,1): warning C4365: 'argument': conversion from 'sdword' to 'UINT', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceGDIApp.h(37,1): warning C4365: 'argument': conversion from 'sdword' to 'DWORD', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMouse.h(61,21): warning C4820: 'IceCore::MouseInfo': '1' bytes padding added after data member '<alignment member>'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceMouse.h(71,26): warning C4820: 'IceCore::MouseInfo': '2' bytes padding added after data member 'IceCore::MouseInfo::mMBDown'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceThread.h(57,16): warning C4820: 'IceCore::IceThread': '3' bytes padding added after data member 'IceCore::IceThread::errbuf'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceSerialize.h(44,43): warning C4365: '=': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceGenericCache.h(30,38): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceVSync.h(29,1): warning C4365: '=': conversion from 'udword' to 'sdword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceVSync.h(35,1): warning C4365: '=': conversion from 'udword' to 'sdword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceVSync.h(47,1): warning C4365: 'argument': conversion from 'sdword' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceVSync.h(49,1): warning C4365: '=': conversion from 'udword' to 'sdword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IceCoreAPI.h(21,2): warning C4820: 'IceCore::ICECORECREATE': '2' bytes padding added after data member 'IceCore::ICECORECREATE::mSetupFPU'
+  Using ICE Maths
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceAxes.h(43,1): warning C4365: '=': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceAxes.h(44,1): warning C4365: '=': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceAxes.h(45,1): warning C4365: '=': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IcePoint.h(238,1): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceQuat.h(27,36): warning C5038: data member 'IceMaths::Quat::w' will be initialized after data member 'IceMaths::Quat::p'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IcePRNode.h(86,9): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceVolumeIntegration.h(34,16): warning C4820: 'IceMaths::INTEGRALSRESULT': '4' bytes padding added after data member 'IceMaths::INTEGRALSRESULT::mCOM'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceVolumeIntegration.h(67,5): warning C4820: 'IceMaths::VolumeIntegrator::TRIFACE': '4' bytes padding added after data member 'IceMaths::VolumeIntegrator::TRIFACE::Verts'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceVolumeIntegration.h(85,18): warning C4820: 'IceMaths::VolumeIntegrator': '4' bytes padding added after data member 'IceMaths::VolumeIntegrator::mC'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceSpline.h(39,2): warning C4820: 'IceMaths::Spline': '3' bytes padding added after data member 'IceMaths::Spline::mMode'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceZCurve.h(52,22): warning C4365: 'initializing': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceFilters.h(105,1): warning C4062: enumerator 'IceMaths::FUNC_TRIANGLE' in switch of enum 'IceMaths::FunctionType' is not handled
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceFilters.h(15): message : see declaration of 'IceMaths::FunctionType'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceFilters.h(105,1): warning C4062: enumerator 'IceMaths::FUNC_NOISE' in switch of enum 'IceMaths::FunctionType' is not handled
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceFilters.h(15): message : see declaration of 'IceMaths::FunctionType'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceFilters.h(105,1): warning C4062: enumerator 'IceMaths::FUNC_FORCE_DWORD' in switch of enum 'IceMaths::FunctionType' is not handled
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceMaths\IceFilters.h(15): message : see declaration of 'IceMaths::FunctionType'
+  Using CONTACT
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Contact\CTC_PointTriangleOverlap.h(35,53): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Contact\CTC_PointTriangleOverlap.h(61,53): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+  Using ICE Meshmerizer
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceObjectInterface.h(33,2): warning C4625: 'Meshmerizer::ObjectInterface': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceObjectInterface.h(33,2): warning C4626: 'Meshmerizer::ObjectInterface': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(96,49): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(97,49): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(98,49): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(99,54): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(101,50): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(102,50): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(103,50): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(104,55): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(107,51): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(108,51): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(109,51): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(110,51): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(111,51): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(112,51): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceEdgeList.h(150,23): warning C4820: 'Meshmerizer::EDGELISTCREATE': '2' bytes padding added after data member 'Meshmerizer::EDGELISTCREATE::EdgesToFaces'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceConvexHull.h(29,2): warning C4820: 'Meshmerizer::CONVEXHULLCREATE': '2' bytes padding added after data member 'Meshmerizer::CONVEXHULLCREATE::PolygonData'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceAdjacencies.h(120,50): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceAdjacencies.h(121,50): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceAdjacencies.h(122,50): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceAdjacencies.h(123,55): warning C4365: 'return': conversion from 'udword' to 'BOOL', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceValency.h(26,2): warning C4820: 'Meshmerizer::VALENCIESCREATE': '3' bytes padding added after data member 'Meshmerizer::VALENCIESCREATE::AdjacentList'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceIndexedSurface.h(150,20): warning C4263: 'bool Meshmerizer::IndexedSurface::Optimize(void)': member function does not override any base class virtual member function
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceIndexedSurface.h(312,2): warning C4264: 'bool Meshmerizer::VertexCloud::Optimize(udword *)': no override available for virtual member function from base 'Meshmerizer::VertexCloud'; function is hidden
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceVertexCloud.h(55): message : see declaration of 'Meshmerizer::VertexCloud::Optimize'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceVertexCloud.h(16): message : see declaration of 'Meshmerizer::VertexCloud'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceMultiSurface.h(98,2): warning C4266: 'bool Meshmerizer::VertexCloud::Optimize(udword *)': no override available for virtual member function from base 'Meshmerizer::VertexCloud'; function is hidden
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceVertexCloud.h(55): message : see declaration of 'Meshmerizer::VertexCloud::Optimize'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceVertexCloud.h(16): message : see declaration of 'Meshmerizer::VertexCloud'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceMultiSurface.h(72,24): warning C4263: 'bool Meshmerizer::MultiSurface::MakePlane(udword,udword,bool,IceMaths::Quad *)': member function does not override any base class virtual member function
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceMultiSurface.h(98,2): warning C4264: 'bool Meshmerizer::IndexedSurface::MakePlane(udword,udword,IceMaths::Quad *)': no override available for virtual member function from base 'Meshmerizer::IndexedSurface'; function is hidden
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceIndexedSurface.h(191): message : see declaration of 'Meshmerizer::IndexedSurface::MakePlane'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceIndexedSurface.h(57): message : see declaration of 'Meshmerizer::IndexedSurface'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceShape.h(61,2): warning C4820: 'Meshmerizer::Curve': '3' bytes padding added after data member 'Meshmerizer::Curve::mClosed'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceNormals.h(84,20): warning C4820: 'Meshmerizer::NORMALSCREATE': '3' bytes padding added after data member 'Meshmerizer::NORMALSCREATE::UseAngles'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceStriper.h(37,20): warning C4820: 'Meshmerizer::STRIPERRESULT': '3' bytes padding added after data member 'Meshmerizer::STRIPERRESULT::AskForWords'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceMeshBuilderResults.h(79,2): warning C4820: 'Meshmerizer::MBGeometry': '3' bytes padding added after data member 'Meshmerizer::MBGeometry::UseW'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceMeshBuilder2.h(97,2): warning C4820: 'Meshmerizer::MBFaceData': '3' bytes padding added after data member 'Meshmerizer::MBFaceData::CCW'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceLODRunner2.h(37,2): warning C4820: 'Meshmerizer::PMVertex': '3' bytes padding added after data member 'Meshmerizer::PMVertex::mBoundary'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\Meshmerizer\IceMeshPacker2.h(99,2): warning C4820: 'Meshmerizer::MeshPacker2': '1' bytes padding added after data member 'Meshmerizer::MeshPacker2::mCompressVCol'
+  Using ICE ImageWork
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceImageWork\IceColor.h(198,1): warning C4245: '=': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceImageWork\IcePicture.h(64,43): warning C4365: 'return': conversion from 'int' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceImageWork\IceFloatPicture.h(42,45): warning C4365: 'return': conversion from 'sdword' to 'udword', signed/unsigned mismatch
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceImageWork\IcePictureImportExport.h(28,2): warning C4625: 'IceImageWork::PictureImportExport': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceImageWork\IcePictureImportExport.h(28,2): warning C4626: 'IceImageWork::PictureImportExport': assignment operator was implicitly defined as deleted
+  Using ICE GUI
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGUIUtils.h(19,7): warning C4296: '>=': expression is always true
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGUIUtils.h(19,26): warning C4296: '>=': expression is always true
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGUIUtils.h(25,7): warning C4296: '>=': expression is always true
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGUIUtils.h(25,26): warning C4296: '>=': expression is always true
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceWidget.h(92,2): warning C4820: 'IceGUI::WidgetDesc': '2' bytes padding added after data member 'IceGUI::WidgetDesc::mEnabled'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceWindow.h(36,2): warning C4820: 'IceGUI::WindowDesc': '3' bytes padding added after data member 'IceGUI::WindowDesc::mCloseAppWithWindow'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceWindow.h(59,2): warning C4820: 'IceGUI::IceWindow': '3' bytes padding added after data member 'IceGUI::IceWindow::mCloseAppWithWindow'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceCheckBox.h(17,19): warning C4820: 'IceGUI::CheckBoxDesc': '3' bytes padding added after data member 'IceGUI::CheckBoxDesc::mChecked'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceRadioButton.h(12,2): warning C4820: 'IceGUI::RadioButtonDesc': '3' bytes padding added after data member 'IceGUI::RadioButtonDesc::mNewGroup'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceToggleButton.h(18,2): warning C4820: 'IceGUI::ToggleButtonDesc': '3' bytes padding added after data member 'IceGUI::ToggleButtonDesc::mChecked'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceTreeView.h(69,2): warning C4820: 'IceGUI::IceTreeView': '3' bytes padding added after data member 'IceGUI::IceTreeView::mRemoveAll'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceRollup.h(49,2): warning C4625: 'IceGUI::IceRollup': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceRollup.h(49,2): warning C4626: 'IceGUI::IceRollup': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IcePanel.h(27,2): warning C4625: 'IceGUI::IcePanel': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IcePanel.h(27,2): warning C4626: 'IceGUI::IcePanel': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGraphWindow.h(21,2): warning C4820: 'IceGUI::GraphDesc': '3' bytes padding added after data member 'IceGUI::GraphDesc::mEnablePopupMenu'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGraphWindow.h(79,30): warning C4820: 'IceGUI::GraphWindow': '1' bytes padding added after data member 'IceGUI::GraphWindow::mBackColor'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGraphWindow.h(89,2): warning C4820: 'IceGUI::GraphWindow': '1' bytes padding added after data member 'IceGUI::GraphWindow::mEnablePopupMenu'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGraphWindow.h(89,2): warning C4625: 'IceGUI::GraphWindow': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceGraphWindow.h(89,2): warning C4626: 'IceGUI::GraphWindow': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceParticleEditor.h(40,34): warning C4820: 'IceGUI::ParticleSourceInfo': '3' bytes padding added after data member 'IceGUI::ParticleSourceInfo::mInfiniteLifetime'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(29,2): warning C4625: 'IceGUI::SelectionButton': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(29,2): warning C4626: 'IceGUI::SelectionButton': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(40,2): warning C4625: 'IceGUI::SelectionCheckBox': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(40,2): warning C4626: 'IceGUI::SelectionCheckBox': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(51,2): warning C4625: 'IceGUI::SelectionWindow': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(51,2): warning C4626: 'IceGUI::SelectionWindow': assignment operator was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(59,2): warning C4820: 'IceGUI::SelectionDialogDesc': '3' bytes padding added after data member 'IceGUI::SelectionDialogDesc::mMultiSelection'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(93,2): warning C4820: 'IceGUI::SelectionDialog': '3' bytes padding added after data member 'IceGUI::SelectionDialog::mInitialUpdate'
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(93,2): warning C4625: 'IceGUI::SelectionDialog': copy constructor was implicitly defined as deleted
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceGUI\IceSelectionDialog.h(93,2): warning C4626: 'IceGUI::SelectionDialog': assignment operator was implicitly defined as deleted
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xkeycheck.h(532,1): warning C4005: 'override': macro redefinition
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IcePreprocessor.h(116): message : see previous definition of 'override'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xkeycheck.h(534,1): fatal error C1189: #error:  The C++ Standard Library forbids macroizing the contextual keyword "override". Enable warning C4005 to find the forbidden define.

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>PEEL</ProjectName>
+    <ProjectGuid>{48F3F88D-E628-4E2E-9F22-C4D5CF8A046D}</ProjectGuid>
+    <RootNamespace>PhysicsTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29511.113</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>jiglib-0.84\include;.\Ice\APIs\Ice\#Plugins\FlexineSDK;.\Ice\APIs\Ice;.\GL;.\HACD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/w34005 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ice\Lib\IceCore.lib;Ice\Lib\IceMaths.lib;Ice\Lib\Contact.lib;Ice\Lib\Meshmerizer.lib;Ice\Lib\IceImageWork.lib;Ice\Lib\IceGUI.lib;Ice\Lib\IML.lib;GL\glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Build\PEEL_DEBUG.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>No</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>jiglib-0.84\include;.\Ice\APIs\Ice\#Plugins\FlexineSDK;.\Ice\APIs\Ice;.\GL;.\HACD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ice\Lib\IceCore.lib;Ice\Lib\IceMaths.lib;Ice\Lib\Contact.lib;Ice\Lib\Meshmerizer.lib;Ice\Lib\IceImageWork.lib;Ice\Lib\IceGUI.lib;Ice\Lib\IML.lib;GL\glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Build\PEEL_DEBUG.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>jiglib-0.84\include;.\Ice\APIs\Ice\#Plugins\FlexineSDK;.\Ice\APIs\Ice;.\GL;.\HACD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/w34005 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ice\Lib\IceCore.lib;Ice\Lib\IceMaths.lib;Ice\Lib\Contact.lib;Ice\Lib\Meshmerizer.lib;Ice\Lib\IceImageWork.lib;Ice\Lib\IceGUI.lib;Ice\Lib\IML.lib;GL\glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Build\PEEL.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>No</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>jiglib-0.84\include;.\Ice\APIs\Ice\#Plugins\FlexineSDK;.\Ice\APIs\Ice;.\GL;.\HACD;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ice\Lib\IceCore.lib;Ice\Lib\IceMaths.lib;Ice\Lib\Contact.lib;Ice\Lib\Meshmerizer.lib;Ice\Lib\IceImageWork.lib;Ice\Lib\IceGUI.lib;Ice\Lib\IML.lib;GL\glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Build\PEEL.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CustomICEAllocator.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="FileFinder.h" />
+    <ClInclude Include="GLFontData.h" />
+    <ClInclude Include="GLFontRenderer.h" />
+    <ClInclude Include="GLVSync.h" />
+    <ClInclude Include="GUI_Helpers.h" />
+    <ClInclude Include="HACD\hacdCircularList.h" />
+    <ClInclude Include="HACD\hacdGraph.h" />
+    <ClInclude Include="HACD\hacdHACD.h" />
+    <ClInclude Include="HACD\hacdICHull.h" />
+    <ClInclude Include="HACD\hacdManifoldMesh.h" />
+    <ClInclude Include="HACD\hacdVector.h" />
+    <ClInclude Include="HACD\hacdVersion.h" />
+    <ClInclude Include="IceBunny.h" />
+    <ClInclude Include="Loader_Bin.h" />
+    <ClInclude Include="Loader_Rays.h" />
+    <ClInclude Include="Loader_RepX.h" />
+    <ClInclude Include="MyConvex.h" />
+    <ClInclude Include="Pint.h" />
+    <ClInclude Include="PintDef.h" />
+    <ClInclude Include="PintObjectsManager.h" />
+    <ClInclude Include="PintRender.h" />
+    <ClInclude Include="PintSQ.h" />
+    <ClInclude Include="PintTiming.h" />
+    <ClInclude Include="ProceduralTrack.h" />
+    <ClInclude Include="ProgressBar.h" />
+    <ClInclude Include="QPCTime.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="RaytracingTest.h" />
+    <ClInclude Include="RaytracingWindow.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="RepX_Tools.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Script.h" />
+    <ClInclude Include="SourceRay.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SurfaceManager.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestScenes.h" />
+    <ClInclude Include="TestScenesHelpers.h" />
+    <ClInclude Include="TestSelector.h" />
+    <ClInclude Include="TitleWindow.h" />
+    <ClInclude Include="TrashCache.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HACD\hacdCircularList.inl" />
+    <None Include="HACD\hacdVector.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="ConvexHull2D.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
+    <ClCompile Include="FileFinder.cpp" />
+    <ClCompile Include="GLFontRenderer.cpp" />
+    <ClCompile Include="GLVSync.cpp" />
+    <ClCompile Include="GUI_Helpers.cpp" />
+    <ClCompile Include="HACD\hacdGraph.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HACD\hacdHACD.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HACD\hacdICHull.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HACD\hacdManifoldMesh.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="IceBunny.cpp" />
+    <ClCompile Include="Loader_Bin.cpp" />
+    <ClCompile Include="Loader_Rays.cpp" />
+    <ClCompile Include="Loader_RepX.cpp" />
+    <ClCompile Include="MyConvex.cpp" />
+    <ClCompile Include="PEEL.cpp" />
+    <ClCompile Include="Pint.cpp" />
+    <ClCompile Include="PintObjectsManager.cpp" />
+    <ClCompile Include="PintRender.cpp" />
+    <ClCompile Include="PintSQ.cpp" />
+    <ClCompile Include="PintTiming.cpp" />
+    <ClCompile Include="ProceduralTrack.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="QPCTime.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="RaytracingTest.cpp" />
+    <ClCompile Include="RaytracingWindow.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="RepX_Tools.cpp" />
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SurfaceManager.cpp" />
+    <ClCompile Include="TestScenes.cpp" />
+    <ClCompile Include="TestScenesHelpers.cpp" />
+    <ClCompile Include="TestScenes_API.cpp" />
+    <ClCompile Include="TestScenes_Articulations.cpp" />
+    <ClCompile Include="TestScenes_Behavior.cpp" />
+    <ClCompile Include="TestScenes_Bulldozer_WIP.cpp" />
+    <ClCompile Include="TestScenes_CCD.cpp" />
+    <ClCompile Include="TestScenes_ContactGeneration.cpp" />
+    <ClCompile Include="TestScenes_Cylinders.cpp" />
+    <ClCompile Include="TestScenes_Joints.cpp" />
+    <ClCompile Include="TestScenes_Joints_WIP.cpp" />
+    <ClCompile Include="TestScenes_Kinematics.cpp" />
+    <ClCompile Include="TestScenes_Overlap.cpp" />
+    <ClCompile Include="TestScenes_Performance.cpp" />
+    <ClCompile Include="TestScenes_Raycast.cpp" />
+    <ClCompile Include="TestScenes_StaticScene.cpp" />
+    <ClCompile Include="TestScenes_Sweep.cpp" />
+    <ClCompile Include="TestScenes_Vehicles.cpp" />
+    <ClCompile Include="TestSelector.cpp" />
+    <ClCompile Include="TitleData.cpp" />
+    <ClCompile Include="TitleWindow.cpp" />
+    <ClCompile Include="TrashCache.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\How to build.txt" />
+    <Text Include="..\Known issues &amp; TODO.txt" />
+    <Text Include="..\Release notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PEEL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PEEL.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xkeycheck.h(532,1): warning C4005: 'override': macro redefinition
+D:\Development\Git\PEEL\PEEL\Physics\Ice\APIs\Ice\IceCore\IcePreprocessor.h(116): message : see previous definition of 'override'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xkeycheck.h(534,1): fatal error C1189: #error:  The C++ Standard Library forbids macroizing the contextual keyword "override". Enable warning C4005 to find the forbidden define.

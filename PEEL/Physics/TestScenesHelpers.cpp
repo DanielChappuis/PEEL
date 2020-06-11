@@ -13,6 +13,7 @@
 #include "MyConvex.h"
 #include "PintObjectsManager.h"
 #include "TestScenes.h"
+#include <string>
 #include "ProgressBar.h"
 #include "Cylinder.h"
 
@@ -23,13 +24,24 @@ static bool gRotateMeshes = false;
 const char* GetFile(const char* filename, udword& size)
 {
 	const char* Tmp0 = _F("../build/%s", filename);
-	size = GetFileSize(Tmp0);
-	if(size)
+	const size_t cSize1 = strlen(Tmp0) + 1;
+	std::wstring wc1(cSize1, L'#');
+	mbstowcs(&wc1[0], Tmp0, cSize1);
+	HANDLE hFile1 = CreateFile(&wc1[0], GENERIC_READ,
+		FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING,
+		FILE_ATTRIBUTE_NORMAL, NULL);
+
+	if(hFile1 != INVALID_HANDLE_VALUE && GetFileSizeEx(hFile1, nullptr))
 		return Tmp0;
 
 	const char* Tmp1 = _F("./%s", filename);
-	size = GetFileSize(Tmp1);
-	if(size)
+	const size_t cSize2 = strlen(Tmp1) + 1;
+	std::wstring wc2(cSize2, L'#');
+	mbstowcs(&wc2[0], Tmp1, cSize2);
+	HANDLE hFile2 = CreateFile(&wc2[0], GENERIC_READ,
+		FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING,
+		FILE_ATTRIBUTE_NORMAL, NULL);
+	if(hFile2 != INVALID_HANDLE_VALUE && GetFileSizeEx(hFile2, nullptr))
 		return Tmp1;
 
 	return null;

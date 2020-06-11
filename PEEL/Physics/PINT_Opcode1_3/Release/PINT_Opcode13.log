@@ -1,0 +1,39 @@
+﻿  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+  PINT_Common.cpp
+  PINT_IceAllocatorSwitch.cpp
+  Opcode.cpp
+  OPC_AABBCollider.cpp
+  OPC_AABBTree.cpp
+  OPC_BaseModel.cpp
+  OPC_BoxPruning.cpp
+  OPC_Collider.cpp
+  OPC_Common.cpp
+  OPC_HybridModel.cpp
+  OPC_LSSCollider.cpp
+  OPC_MeshInterface.cpp
+  OPC_Model.cpp
+  OPC_OBBCollider.cpp
+  OPC_OptimizedTree.cpp
+  OPC_Picking.cpp
+  OPC_PlanesCollider.cpp
+  OPC_RayCollider.cpp
+  OPC_SphereCollider.cpp
+  OPC_SweepAndPrune.cpp
+  Generating Code...
+  Compiling...
+  OPC_TreeBuilders.cpp
+  OPC_TreeCollider.cpp
+  OPC_VolumeCollider.cpp
+  PINT_Opcode13.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1274,5): warning MSB8012: TargetPath(D:\Development\Git\PEEL\PEEL\Release\PINT_Opcode13.dll) does not match the Linker's OutputFile property value (D:\Development\Git\PEEL\PEEL\Physics\PINT_Opcode1_3\Release\PINT_Opcode13.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library D:\Development\Git\PEEL\PEEL\Release\PINT_Opcode13.lib and object D:\Development\Git\PEEL\PEEL\Release\PINT_Opcode13.exp
+PINT_Opcode13.obj : error LNK2019: unresolved external symbol "protected: int __thiscall Opcode::OBBCollider::OBBContainsBox(class IceMaths::Point const &,class IceMaths::Point const &)" (?OBBContainsBox@OBBCollider@Opcode@@IAEHABVPoint@IceMaths@@0@Z) referenced in function "public: void __thiscall SceneOBBCollider::_Collide(class Opcode::AABBTreeNode const *)" (?_Collide@SceneOBBCollider@@QAEXPBVAABBTreeNode@Opcode@@@Z)
+PINT_Opcode13.obj : error LNK2019: unresolved external symbol "protected: int __thiscall Opcode::OBBCollider::BoxBoxOverlap(class IceMaths::Point const &,class IceMaths::Point const &)" (?BoxBoxOverlap@OBBCollider@Opcode@@IAEHABVPoint@IceMaths@@0@Z) referenced in function "public: void __thiscall SceneOBBCollider::_Collide(class Opcode::AABBTreeNode const *)" (?_Collide@SceneOBBCollider@@QAEXPBVAABBTreeNode@Opcode@@@Z)
+.\Release\PINT_Opcode13.dll : fatal error LNK1120: 2 unresolved externals

@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+  PINT_Common.cpp
+  PINT_Skeleton.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1274,5): warning MSB8012: TargetPath(D:\Development\Git\PEEL\PEEL\Release\PINT_Skeleton.dll) does not match the Linker's OutputFile property value (D:\Development\Git\PEEL\PEEL\Physics\PINT_Skeleton\Release\PINT_Skeleton.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library D:\Development\Git\PEEL\PEEL\Release\PINT_Skeleton.lib and object D:\Development\Git\PEEL\PEEL\Release\PINT_Skeleton.exp
+  PINT_Skeleton.vcxproj -> D:\Development\Git\PEEL\PEEL\Release\PINT_Skeleton.dll
+  Copying DLL to Build folder...
+          1 fichier(s) copié(s).

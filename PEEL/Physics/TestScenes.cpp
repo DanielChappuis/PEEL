@@ -445,7 +445,7 @@ static const char* gDesc_EmptyScene = "Empty scene. Use this to measure the oper
 
 START_TEST(EmptyScene, CATEGORY_UNDEFINED, gDesc_EmptyScene)
 
-	virtual bool EmptyScene::Setup(Pint& pint, const PintCaps& caps)
+	virtual bool Setup(Pint& pint, const PintCaps& caps)
 	{
 		mCreateDefaultEnvironment = false;
 		return true;
@@ -459,7 +459,7 @@ static const char* gDesc_TestNewFeature = "For dev only. Experimental place to t
 
 START_TEST(TestNewFeature, CATEGORY_UNDEFINED, gDesc_TestNewFeature)
 
-	virtual	void TestNewFeature::GetSceneParams(PINT_WORLD_CREATE& desc)
+	virtual	void GetSceneParams(PINT_WORLD_CREATE& desc)
 	{
 		TestBase::GetSceneParams(desc);
 //		desc.mCamera[0] = CameraPose(Point(27.62f, -17.06f, 121.28f), Point(-0.10f, 0.08f, -0.99f));
@@ -467,7 +467,7 @@ START_TEST(TestNewFeature, CATEGORY_UNDEFINED, gDesc_TestNewFeature)
 		desc.mCamera[0] = CameraPose(Point(3.54f, 26.57f, 72.47f), Point(-0.02f, -0.71f, -0.70f));
 	}
 
-	virtual bool TestNewFeature::Setup(Pint& pint, const PintCaps& caps)
+	virtual bool Setup(Pint& pint, const PintCaps& caps)
 	{
 		pint.TestNewFeature();
 		mCreateDefaultEnvironment = false;
