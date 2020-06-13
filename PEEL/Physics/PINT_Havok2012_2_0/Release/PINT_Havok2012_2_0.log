@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+c:\users\daniel\desktop\git2\peel\peel\physics\pint_havok2012_2_0\stdafx.h(23): fatal error C1083: Cannot open include file: 'Common/Base/hkBase.h': No such file or directory

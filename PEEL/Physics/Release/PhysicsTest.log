@@ -1,0 +1,58 @@
+﻿  stdafx.cpp
+  Using ICE Core
+  Using ICE Maths
+  Using CONTACT
+  Using ICE Meshmerizer
+  Using ICE ImageWork
+  Using ICE GUI
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\limits(210): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  Camera.cpp
+  CameraManager.cpp
+  FileFinder.cpp
+  GLFontRenderer.cpp
+  GLVSync.cpp
+  IceBunny.cpp
+  Loader_Bin.cpp
+  Loader_Rays.cpp
+  Loader_RepX.cpp
+  MyConvex.cpp
+  PEEL.cpp
+  Pint.cpp
+  PintObjectsManager.cpp
+  PintRender.cpp
+  PintSQ.cpp
+  PintTiming.cpp
+  ProgressBar.cpp
+  QPCTime.cpp
+  Random.cpp
+  RaytracingTest.cpp
+  Compiling...
+  RaytracingWindow.cpp
+  Render.cpp
+  RepX_Tools.cpp
+  Script.cpp
+  SurfaceManager.cpp
+  TestScenes.cpp
+  TestScenesHelpers.cpp
+  TestScenes_API.cpp
+  TestScenes_Behavior.cpp
+  TestScenes_CCD.cpp
+  TestScenes_ContactGeneration.cpp
+  TestScenes_Overlap.cpp
+  TestScenes_Performance.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocinfo(32): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+  TestScenes_Raycast.cpp
+  TestScenes_StaticScene.cpp
+  TestScenes_Sweep.cpp
+  TestSelector.cpp
+  TitleData.cpp
+  TitleWindow.cpp
+  TrashCache.cpp
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Release\PEEL.exe) does not match the Linker's OutputFile property value (C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Build\PEEL.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  Generating code
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\iceprofiler.h(110): warning C4731: 'RaytracingTest': frame pointer register 'ebx' modified by inline assembly code
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\iceprofiler.h(112): warning C4731: 'RaytracingTest': frame pointer register 'ebx' modified by inline assembly code
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\iceprofiler.h(135): warning C4731: 'RaytracingTest': frame pointer register 'ebx' modified by inline assembly code
+c:\users\daniel\desktop\git2\peel\peel\physics\ice\apis\ice\icecore\iceprofiler.h(137): warning C4731: 'RaytracingTest': frame pointer register 'ebx' modified by inline assembly code
+  Finished generating code
+  PhysicsTest.vcxproj -> C:\Users\daniel\Desktop\Git2\PEEL\PEEL\Release\PEEL.exe
