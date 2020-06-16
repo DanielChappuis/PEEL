@@ -39,7 +39,15 @@
 		virtual	udword									BatchCapsuleSweeps(PintSQThreadContext context, udword nb, PintRaycastHit* dest, const PintCapsuleSweepData* sweeps);
 
 		virtual	PR										GetWorldTransform(PintObjectHandle handle);
+		virtual	void									SetWorldTransform(PintObjectHandle handle, const PR& pose);
+
 		virtual	void									ApplyActionAtPoint(PintObjectHandle handle, PintActionType action_type, const Point& action, const Point& pos);
+
+		virtual	Point									GetAngularVelocity(PintObjectHandle handle);
+		virtual	void									SetAngularVelocity(PintObjectHandle handle, const Point& angular_velocity);
+
+		virtual	float									GetMass(PintObjectHandle handle);
+		virtual	Point									GetLocalInertia(PintObjectHandle handle);
 
 		virtual	udword									CreateConvexObject(const PINT_CONVEX_DATA_CREATE& desc);
 		virtual	udword									BatchConvexSweeps(PintSQThreadContext context, udword nb, PintRaycastHit* dest, const PintConvexSweepData* sweeps);

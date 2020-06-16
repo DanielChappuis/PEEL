@@ -11,65 +11,6 @@
 #include "stdafx.h"
 #include "PINT_CommonReactPhysics3D.h"
 
-	/*
-	// A special version to keep track of the triangle index & enable backface culling
-	struct MyClosestRayResultCallback : public btCollisionWorld::RayResultCallback
-	{
-		MyClosestRayResultCallback(const btVector3& rayFromWorld, const btVector3& rayToWorld) : m_rayFromWorld(rayFromWorld), m_rayToWorld(rayToWorld)
-		{
-#ifdef BULLET_BACKFACE_CULLING
-			m_flags = btTriangleRaycastCallback::kF_FilterBackfaces;
-#endif
-		}
-
-		btVector3	m_rayFromWorld;//used to calculate hitPointWorld from hitFraction
-		btVector3	m_rayToWorld;
-
-		btVector3	m_hitNormalWorld;
-		btVector3	m_hitPointWorld;
-
-		udword		m_TriangleIndex;
-
-		virtual	btScalar	addSingleResult(btCollisionWorld::LocalRayResult& rayResult, bool normalInWorldSpace)
-		{
-			//caller already does the filter on the m_closestHitFraction
-			ASSERT(rayResult.m_hitFraction <= m_closestHitFraction);
-
-			if(rayResult.m_localShapeInfo)
-				m_TriangleIndex	= rayResult.m_localShapeInfo->m_triangleIndex;
-			else
-				m_TriangleIndex	= INVALID_ID;
-
-			m_closestHitFraction = rayResult.m_hitFraction;
-			m_collisionObject = rayResult.m_collisionObject;
-			if(normalInWorldSpace)
-			{
-				m_hitNormalWorld = rayResult.m_hitNormalLocal;
-			}
-			else
-			{
-				///need to transform normal into worldspace
-				m_hitNormalWorld = m_collisionObject->getWorldTransform().getBasis()*rayResult.m_hitNormalLocal;
-			}
-			m_hitPointWorld.setInterpolate3(m_rayFromWorld,m_rayToWorld,rayResult.m_hitFraction);
-			return rayResult.m_hitFraction;
-		}
-	};
-	*/
-
-/*
-static inline_ void FillResultStruct(PintRaycastHit& hit, const MyClosestRayResultCallback& result, float max_dist)
-{
-//	hit.mObject			= result.m_collisionObject;
-	hit.mObject			= (PintObjectHandle)btRigidBody::upcast(result.m_collisionObject);
-	hit.mImpact			= ToPoint(result.m_hitPointWorld);
-	hit.mNormal			= ToPoint(result.m_hitNormalWorld);
-//	hit.mDistance		= origin.Distance(hit.mImpact);
-	hit.mDistance		= result.m_closestHitFraction * max_dist;
-	hit.mTriangleIndex	= result.m_TriangleIndex;
-}
-*/
-
 udword ReactPhysics3D::BatchRaycasts(PintSQThreadContext context, udword nb, PintRaycastHit* dest, const PintRaycastData* raycasts)
 {
 	ASSERT(mPhysicsWorld);
@@ -314,6 +255,16 @@ PR ReactPhysics3D::GetWorldTransform(PintObjectHandle handle)
 	return ToPR(trans);
 }
 
+
+void ReactPhysics3D::SetWorldTransform(PintObjectHandle handle, const PR& pose)
+{
+	rp3d::RigidBody* body = (rp3d::RigidBody*)handle;
+
+	rp3d::Transform transform(ToRP3DVector3(pose.mPos), ToRP3DQuaternion(pose.mRot));
+
+	body->setTransform(transform);
+}
+
 void ReactPhysics3D::ApplyActionAtPoint(PintObjectHandle handle, PintActionType action_type, const Point& action, const Point& pos)
 {
 	rp3d::RigidBody* body = (rp3d::RigidBody*)handle;
@@ -335,4 +286,29 @@ void ReactPhysics3D::ApplyActionAtPoint(PintObjectHandle handle, PintActionType 
 		//body->applyImpulse(ToRP3DVector3(action), rel_pos);
 	}
 	else ASSERT(0);
+}
+
+Point ReactPhysics3D::GetAngularVelocity(PintObjectHandle handle)
+{
+	const rp3d::RigidBody* body = (const rp3d::RigidBody*)handle;
+	return ToPoint(body->getAngularVelocity());
+}
+
+void ReactPhysics3D::SetAngularVelocity(PintObjectHandle handle, const Point& angular_velocity)
+{
+	rp3d::RigidBody* body = (rp3d::RigidBody*)handle;
+	body->setAngularVelocity(ToRP3DVector3(angular_velocity));
+}
+
+float ReactPhysics3D::GetMass(PintObjectHandle handle)
+{
+	const rp3d::RigidBody* body = (const rp3d::RigidBody*)handle;
+	return body->getMass();
+}
+
+Point ReactPhysics3D::GetLocalInertia(PintObjectHandle handle)
+{
+	const rp3d::RigidBody* body = (const rp3d::RigidBody*)handle;
+	const rp3d::Vector3 inertia = body->getLocalInertiaTensor();
+	return Point(inertia.x, inertia.y, inertia.z);
 }

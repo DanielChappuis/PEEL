@@ -21,7 +21,7 @@ static			float	gAngularDamping					= 0.05f;
 static			float	gErp							= 0.2f;
 static			float	gErp2							= 0.1f;
 static			float	gCollisionMargin				= 0.04f;
-static			bool	gUseSplitImpulse				= false;
+static			bool	gUseSplitImpulse				= true;
 static			bool	gRandomizeOrder					= false;
 static			bool	gWarmStarting					= true;
 static			bool	gShareShapes					= true;
@@ -249,6 +249,7 @@ void ReactPhysics3D::Init(const PINT_WORLD_CREATE& desc)
 	worldSettings.gravity = ToRP3DVector3(desc.mGravity);
 	mPhysicsWorld = mPhysicsCommon.createPhysicsWorld(worldSettings);
     mPhysicsWorld->setNbIterationsVelocitySolver(gSolverIterationCount);
+	mPhysicsWorld->setContactsPositionCorrectionTechnique(gUseSplitImpulse ? rp3d::ContactsPositionCorrectionTechnique::SPLIT_IMPULSES : rp3d::ContactsPositionCorrectionTechnique::BAUMGARTE_CONTACTS);
 	//mDynamicsWorld->setContactsPositionCorrectionTechnique(rp3d::BAUMGARTE_CONTACTS);
 	//mDynamicsWorld->setGravity(ToBtVector3(desc.mGravity));
 
@@ -680,8 +681,6 @@ rp3d::CollisionShape* ReactPhysics3D::CreateReactPhysics3DShape(const PINT_SHAPE
 
 	else ASSERT(0);
 
-	
-
 	return collisionShape;
 }
 
@@ -724,16 +723,15 @@ PintObjectHandle ReactPhysics3D::CreateObject(const PINT_OBJECT_CREATE& desc)
 			{
 				collider->getMaterial().setBounciness(CurrentShape->mMaterial->mRestitution);
 				collider->getMaterial().setFrictionCoefficient(CurrentShape->mMaterial->mDynamicFriction);
+
+				if (NbShapes == 1) {
+					float mass = desc.mMassForInertia > 0 ? desc.mMassForInertia : desc.mMass;
+					collider->getMaterial().setMassDensity(mass / collider->getCollisionShape()->getVolume());
+				}
 			}
 		}
 
 		CurrentShape = CurrentShape->mNext;
-	}
-
-	body->setMass(desc.mMass);
-
-	if (!isDynamic) {
-		body->setType(rp3d::BodyType::STATIC);
 	}
 
 	//using motionstate is recommended, it provides interpolation capabilities, and only synchronizes 'active' objects
@@ -743,8 +741,15 @@ PintObjectHandle ReactPhysics3D::CreateObject(const PINT_OBJECT_CREATE& desc)
 
 	if(isDynamic)
 	{
+		body->updateMassPropertiesFromColliders();
+		body->setMass(desc.mMass);
+
 		body->setLinearVelocity(ToRP3DVector3(desc.mLinearVelocity));
 		body->setAngularVelocity(ToRP3DVector3(desc.mAngularVelocity));
+
+		if (desc.mCOMLocalOffset.IsNonZero()) {
+			body->setLocalCenterOfMass(body->getLocalCenterOfMass() + ToRP3DVector3(desc.mCOMLocalOffset));
+		}
 
 		//collisionFilterGroup = short(btBroadphaseProxy::DefaultFilter);
 		//collisionFilterMask = short(btBroadphaseProxy::AllFilter);
@@ -759,6 +764,8 @@ PintObjectHandle ReactPhysics3D::CreateObject(const PINT_OBJECT_CREATE& desc)
 	}
 	else
 	{
+		body->setType(rp3d::BodyType::STATIC);
+
 		/*body->setCollisionFlags(btCollisionObject::CF_STATIC_OBJECT);
 
 		collisionFilterGroup = short(btBroadphaseProxy::StaticFilter);

@@ -933,7 +933,7 @@
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
        The target "CoreCompile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (59,12)" does not exist in the project, and will be ignored.
-Build started 15.06.2020 08:52:01.
+Build started 15.06.2020 23:03:35.
 Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
@@ -958,10 +958,10 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
      1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={64713973-A49C-41AA-9D15-7436438B8B8C}
+         VSTEL_SolutionSessionID={C2A30DA7-D1C7-46CC-914D-55FF972EAA8C}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=120147437
+         VSTEL_CurrentSolutionBuildID=171241687
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={EEC474C5-35FD-434E-9D5B-8BB4ED0B4720}
@@ -1124,7 +1124,7 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Release\PINT_Rea.EEC474C5.tlog\unsuccessfulbuild".
+         Creating "Release\PINT_Rea.EEC474C5.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "PINT_ReactPhysics3D080.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
@@ -1257,7 +1257,17 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMON.OBJ
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMONREACTPHYSICS3D.OBJ
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ
-         All outputs are up-to-date.
+         PINT_ReactPhysics3D080.cpp will be compiled because D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.cpp was modified at 15.06.2020 23:02:23.
+         Outputs for D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\PINT_REACTPHYSICS3D080.CPP:
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ
+         Write Tracking Logs:
+         	Release\PINT_Rea.EEC474C5.tlog\CL.write.1.tlog
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=1312
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I.\ /I..\Ice\APIs\Ice /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /nologo /W3 /WX- /diagnostics:column /O2 /Oi /Ot /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /MT /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yu"stdafx.h" /Fp"Release\PINT_ReactPhysics3D080.pch" /Fo"Release\\" /Fd"Release\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt PINT_ReactPhysics3D080.cpp
+         Tracking command:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Release\PINT_Rea.EEC474C5.tlog /r D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\PINT_REACTPHYSICS3D080.CPP /b MSBuildConsole_CancelEventcb679a21c1db426ba2f73fad5e2e53b6  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe"  /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I.\ /I..\Ice\APIs\Ice /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /nologo /W3 /WX- /diagnostics:column /O2 /Oi /Ot /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /GF /Gm- /MT /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yu"stdafx.h" /Fp"Release\PINT_ReactPhysics3D080.pch" /Fo"Release\\" /Fd"Release\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt PINT_ReactPhysics3D080.cpp
+         PINT_ReactPhysics3D080.cpp
        Done executing task "CL".
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('Create' != 'Create' and ''!='true' and '' == '' and stdafx.cpp != '' and 'false' != 'true').
      1>Done building target "ClCompile" in project "PINT_ReactPhysics3D080.vcxproj".
@@ -1381,22 +1391,71 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
          Outputs for D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMON.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMONREACTPHYSICS3D.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\STDAFX.OBJ:
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.DLL
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\RELEASE\PINT_REACTPHYSICS3D080.PDB
-         All outputs are up-to-date.
+         Inputs for D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMON.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMONREACTPHYSICS3D.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\STDAFX.OBJ:
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\ICECORE.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\ICEMATHS.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\CONTACT.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\MESHMERIZER.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\ICEIMAGEWORK.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\ICEGUI.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\ICE\LIB\IML.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL_EXTERNALS\REACTPHYSICS3DV0_8_0\RELEASE\REACTPHYSICS3D.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ODBCCP32.LIB
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMON.OBJ
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMONREACTPHYSICS3D.OBJ
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ
+         	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\STDAFX.OBJ
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\LIB\X86\LIBCPMT.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\LIB\X86\LIBCMT.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\LIB\X86\OLDNAMES.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\LIB\X86\LIBCONCRT.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\LIB\X86\LIBVCRUNTIME.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UCRT\X86\LIBUCRT.LIB
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\BIN\HOSTX86\X86\1033\LINKUI.DLL
+         Source compilation required: input D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ is newer than output D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.DLL.
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=1412
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\PINT_ReactPhysics3D080.dll" /INCREMENTAL:NO /NOLOGO ..\Ice\Lib\IceCore.lib ..\Ice\Lib\IceMaths.lib ..\Ice\Lib\Contact.lib ..\Ice\Lib\Meshmerizer.lib ..\Ice\Lib\IceImageWork.lib ..\Ice\Lib\IceGUI.lib ..\Ice\Lib\IML.lib ..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Release\reactphysics3d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.lib" /MACHINE:X86 /SAFESEH /DLL Release\PINT_Common.obj
+         Release\PINT_CommonReactPhysics3D.obj
+         Release\PINT_ReactPhysics3D080.obj
+         Release\stdafx.obj
+         Tracking command:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Release\PINT_Rea.EEC474C5.tlog /r "D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMON.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_COMMONREACTPHYSICS3D.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\PINT_REACTPHYSICS3D080.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\RELEASE\STDAFX.OBJ" /b MSBuildConsole_CancelEvent60deeeab281a49709eb6e5ccddc006cb  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:".\Release\PINT_ReactPhysics3D080.dll" /INCREMENTAL:NO /NOLOGO ..\Ice\Lib\IceCore.lib ..\Ice\Lib\IceMaths.lib ..\Ice\Lib\Contact.lib ..\Ice\Lib\Meshmerizer.lib ..\Ice\Lib\IceImageWork.lib ..\Ice\Lib\IceGUI.lib ..\Ice\Lib\IML.lib ..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Release\reactphysics3d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.lib" /MACHINE:X86 /SAFESEH /DLL Release\PINT_Common.obj
+         Release\PINT_CommonReactPhysics3D.obj
+         Release\PINT_ReactPhysics3D080.obj
+         Release\stdafx.obj
+            Creating library D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.lib and object D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.exp
        Done executing task "Link".
        Task "Message"
          PINT_ReactPhysics3D080.vcxproj -> D:\Development\Git\PEEL\PEEL\Release\PINT_ReactPhysics3D080.dll
        Done executing task "Message".
        Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('' != 'LINK' or 'true' != 'true' or 'True' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('' != 'LINK' or 'true' != 'true' or 'False' == 'true') and
                     true == 'DebugFastLink' and  != '').
        Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('' != 'LINK' or 'true' != 'true' or 'True' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('' != 'LINK' or 'true' != 'true' or 'False' == 'true') and
                     true == 'true' and  != '').
      1>Done building target "Link" in project "PINT_ReactPhysics3D080.vcxproj".
        Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
        Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false' and '$(CLRSupport)'!='NetCore') was evaluated as ('false'!='' and 'false'!='false' and 'false'!='NetCore').
        Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-       Target "ComputeLinkImportLibraryOutputsForClean" skipped, due to false condition; ('$(LinkSkippedExecution)' != 'true') was evaluated as ('True' != 'true').
+     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "_Link" depends on it):
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "PINT_ReactPhysics3D080.vcxproj".
      1>Target "AfterLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "_Link" depends on it):
      1>Done building target "AfterLink" in project "PINT_ReactPhysics3D080.vcxproj".
      1>Target "_Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "_BuildLinkAction" depends on it):
@@ -1409,7 +1468,13 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
        Task "CallTarget"
        Done executing task "CallTarget".
      1>Done building target "_Manifest" in project "PINT_ReactPhysics3D080.vcxproj".
-       Target "RegisterOutput" skipped, due to false condition; ('$(LinkSkippedExecution)' != 'true' and (('$(Platform)' == 'x64' and ('$(PROCESSOR_ARCHITECTURE)' == 'AMD64' or '$(PROCESSOR_ARCHITEW6432)' == 'AMD64')) or '$(Platform)' == 'Win32')) was evaluated as ('True' != 'true' and (('Win32' == 'x64' and ('x86' == 'AMD64' or 'AMD64' == 'AMD64')) or 'Win32' == 'Win32')).
+     1>Target "RegisterOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('DynamicLibrary'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('DynamicLibrary'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('DynamicLibrary'=='Application' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('DynamicLibrary'=='Application' and 'false'=='true' and 'false'=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
+     1>Done building target "RegisterOutput" in project "PINT_ReactPhysics3D080.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
      1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "_XdcMake" depends on it):
@@ -1582,4 +1647,4 @@ Build succeeded.
     2 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:01.18
