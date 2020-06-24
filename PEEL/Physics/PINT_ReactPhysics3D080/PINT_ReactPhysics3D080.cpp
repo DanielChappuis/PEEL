@@ -194,8 +194,6 @@ class MyDebugDrawer : public btIDebugDraw
 */
 ///////////////////////////////////////////////////////////////////////////////
 
-static inline_	udword 	RemapCollisionGroup(udword group)	{ return group+2;	}
-
 ReactPhysics3D::ReactPhysics3D() : mPhysicsWorld			(null)
 {
 }
@@ -209,16 +207,16 @@ void ReactPhysics3D::GetCaps(PintCaps& caps) const
 {
 	caps.mSupportRigidBodySimulation	= true;
 	caps.mSupportKinematics				= false;
-	caps.mSupportCollisionGroups		= false;
+	caps.mSupportCollisionGroups		= true;
 	caps.mSupportCompounds				= true;
 	caps.mSupportConvexes				= false;
 	caps.mSupportMeshes					= true;
-	caps.mSupportSphericalJoints		= false;
-	caps.mSupportHingeJoints			= false;
-	caps.mSupportFixedJoints			= false;
-	caps.mSupportPrismaticJoints		= false;
+	caps.mSupportSphericalJoints		= true;
+	caps.mSupportHingeJoints			= true;
+	caps.mSupportFixedJoints			= true;
+	caps.mSupportPrismaticJoints		= true;
 	caps.mSupportPhantoms				= false;
-	caps.mSupportRaycasts				= false;
+	caps.mSupportRaycasts				= true;
 	caps.mSupportBoxSweeps				= false;
 	caps.mSupportSphereSweeps			= false;
 	caps.mSupportCapsuleSweeps			= false;
@@ -640,7 +638,7 @@ rp3d::CollisionShape* ReactPhysics3D::CreateReactPhysics3DShape(const PINT_SHAPE
 		// Vertex and Indices array for the triangle mesh (data in shared and not copied)
         rp3d::TriangleVertexArray* vertexArray =
                 new rp3d::TriangleVertexArray(MeshCreate.mSurface.mNbVerts, (float*)&MeshCreate.mSurface.mVerts->x, sizeof(Point),
-                                              MeshCreate.mSurface.mNbFaces, (int*)MeshCreate.mSurface.mDFaces, sizeof(udword),
+                                              MeshCreate.mSurface.mNbFaces, (int*)MeshCreate.mSurface.mDFaces, 3 * sizeof(udword),
                                               rp3d::TriangleVertexArray::VertexDataType::VERTEX_FLOAT_TYPE,
                                               rp3d::TriangleVertexArray::IndexDataType::INDEX_INTEGER_TYPE);
 
@@ -648,20 +646,8 @@ rp3d::CollisionShape* ReactPhysics3D::CreateReactPhysics3DShape(const PINT_SHAPE
         // Add the triangle vertex array of the subpart to the triangle mesh
         triangleMesh->addSubpart(vertexArray);
 
-		/*
-		btTriangleIndexVertexArray* m_indexVertexArrays = new btTriangleIndexVertexArray(
-			MeshCreate.mSurface.mNbFaces,
-			(int*)MeshCreate.mSurface.mDFaces,
-			3*sizeof(udword),
-			MeshCreate.mSurface.mNbVerts,
-			(float*)&MeshCreate.mSurface.mVerts->x,
-			sizeof(Point));
-		*/
-
 		rp3d::ConcaveMeshShape* shape = mPhysicsCommon.createConcaveMeshShape(triangleMesh);
 
-		//btBvhTriangleMeshShape* shape  = new btBvhTriangleMeshShape(m_indexVertexArrays, true, true);
-		
 		ASSERT(shape);
 
 		InternalMeshShape MeshData;
@@ -729,6 +715,17 @@ PintObjectHandle ReactPhysics3D::CreateObject(const PINT_OBJECT_CREATE& desc)
 					collider->getMaterial().setMassDensity(mass / collider->getCollisionShape()->getVolume());
 				}
 			}
+
+			// Collision groups
+			if(desc.mCollisionGroup)
+			{
+				ASSERT(desc.mCollisionGroup<32);
+				unsigned short collisionFilterGroup = unsigned short(1 << desc.mCollisionGroup);
+				unsigned short collisionFilterMask = unsigned short(mGroupMasks[desc.mCollisionGroup]);
+				collider->setCollisionCategoryBits(collisionFilterGroup);
+				collider->setCollideWithMaskBits(collisionFilterMask);
+			}
+
 		}
 
 		CurrentShape = CurrentShape->mNext;
@@ -824,13 +821,9 @@ PintJointHandle ReactPhysics3D::CreateJoint(const PINT_JOINT_CREATE& desc)
 {
 	ASSERT(mPhysicsWorld);
 	void* constraint = null;
-	//btTypedConstraint* constraint = null;
 
-	/*
-	btRigidBody* body0 = (btRigidBody*)desc.mObject0;
-	btRigidBody* body1 = (btRigidBody*)desc.mObject1;
-
-	
+	rp3d::RigidBody* body0 = (rp3d::RigidBody*)desc.mObject0;
+	rp3d::RigidBody* body1 = (rp3d::RigidBody*)desc.mObject1;
 
 	switch(desc.mType)
 	{
@@ -838,7 +831,11 @@ PintJointHandle ReactPhysics3D::CreateJoint(const PINT_JOINT_CREATE& desc)
 		{
 			const PINT_SPHERICAL_JOINT_CREATE& jc = static_cast<const PINT_SPHERICAL_JOINT_CREATE&>(desc);
 
-			constraint = new btPoint2PointConstraint(*body0, *body1, ToBtVector3(jc.mLocalPivot0), ToBtVector3(jc.mLocalPivot1));
+			const rp3d::Transform& body0ToWorld = body0->getTransform();
+			rp3d::BallAndSocketJointInfo jointInfo(body0, body1, body0ToWorld * ToRP3DVector3(jc.mLocalPivot0));
+			jointInfo.isCollisionEnabled = false;
+
+			constraint = mPhysicsWorld->createJoint(jointInfo);
 			ASSERT(constraint);
 		}
 		break;
@@ -847,49 +844,18 @@ PintJointHandle ReactPhysics3D::CreateJoint(const PINT_JOINT_CREATE& desc)
 		{
 			const PINT_HINGE_JOINT_CREATE& jc = static_cast<const PINT_HINGE_JOINT_CREATE&>(desc);
 
-			if(1)
-			{
-				ASSERT(jc.mGlobalAnchor.IsNotUsed());
-				ASSERT(jc.mGlobalAxis.IsNotUsed());
+			const rp3d::Transform& body0ToWorld = body0->getTransform();
+			rp3d::HingeJointInfo jointInfo(body0, body1, body0ToWorld * ToRP3DVector3(jc.mLocalPivot0),
+				body0ToWorld.getOrientation() * ToRP3DVector3(jc.mLocalAxis0));
+			jointInfo.isCollisionEnabled = false;
 
-//				const btTransform frameInA = CreateFrame(jc.mLocalPivot0, jc.mLocalAxis0);
-//				const btTransform frameInB = CreateFrame(jc.mLocalPivot1, jc.mLocalAxis1);
-//				btHingeConstraint* hc = new btHingeConstraint(*body0, *body1, frameInA, frameInB, false);
-
-				btHingeConstraint* hc = new btHingeConstraint(	*body0, *body1,
-																ToBtVector3(jc.mLocalPivot0), ToBtVector3(jc.mLocalPivot1),
-																ToBtVector3(jc.mLocalAxis0), ToBtVector3(jc.mLocalAxis1));
-				ASSERT(hc);
-				constraint = hc;
-	//			float	targetVelocity = 1.f;
-	//			float	maxMotorImpulse = 1.0f;
-	//			hinge->enableAngularMotor(true,targetVelocity,maxMotorImpulse);
-
-				if(jc.mMinLimitAngle!=MIN_FLOAT || jc.mMaxLimitAngle!=MAX_FLOAT)
-					hc->setLimit(jc.mMinLimitAngle, jc.mMaxLimitAngle);
-//				hc->setLimit(0.0f, 0.0f, 1.0f);
+			if (jc.mMinLimitAngle != MIN_FLOAT || jc.mMaxLimitAngle != MAX_FLOAT) {
+				jointInfo.isLimitEnabled = true;
+				jointInfo.minAngleLimit = jc.mMinLimitAngle;
+				jointInfo.maxAngleLimit = jc.mMaxLimitAngle;
 			}
-			else
-			{
-				const btTransform frameInA = CreateFrame(jc.mLocalPivot0, jc.mLocalAxis0);
-				const btTransform frameInB = CreateFrame(jc.mLocalPivot1, jc.mLocalAxis1);
 
-				btGeneric6DofConstraint* hc = new btGeneric6DofConstraint(*body0, *body1, frameInA, frameInB, false);
-				ASSERT(hc);
-				constraint = hc;
-
-//				hc->setAngularLowerLimit(btVector3(jc.mMinLimitAngle,0,0));
-//				hc->setAngularUpperLimit(btVector3(jc.mMaxLimitAngle,0,0));
-
-			//	btVector3 lowerSliderLimit = btVector3(-20,0,0);
-			//	btVector3 hiSliderLimit = btVector3(-10,0,0);
-			////	btVector3 lowerSliderLimit = btVector3(-20,-5,-5);
-			////	btVector3 hiSliderLimit = btVector3(-10,5,5);
-			//	spSlider1->setLinearLowerLimit(lowerSliderLimit);
-			//	spSlider1->setLinearUpperLimit(hiSliderLimit);
-			//	spSlider1->setAngularLowerLimit(btVector3(0,0,0));
-			//	spSlider1->setAngularUpperLimit(btVector3(0,0,0));
-			}
+			constraint = mPhysicsWorld->createJoint(jointInfo);
 		}
 		break;
 
@@ -897,18 +863,13 @@ PintJointHandle ReactPhysics3D::CreateJoint(const PINT_JOINT_CREATE& desc)
 		{
 			const PINT_FIXED_JOINT_CREATE& jc = static_cast<const PINT_FIXED_JOINT_CREATE&>(desc);
 
-			if(1)	// Emulating fixed joint with limited hinge
-			{
-				const Point LocalAxis(1,0,0);
-				btHingeConstraint* hc = new btHingeConstraint(	*body0, *body1,
-																ToBtVector3(jc.mLocalPivot0), ToBtVector3(jc.mLocalPivot1),
-																ToBtVector3(LocalAxis), ToBtVector3(LocalAxis));
-				ASSERT(hc);
+			const rp3d::Transform& body0ToWorld = body0->getTransform();
+			rp3d::FixedJointInfo jointInfo(body0, body1, body0ToWorld * ToRP3DVector3(jc.mLocalPivot0));
+			jointInfo.isCollisionEnabled = false;
 
-				hc->setLimit(0.0f, 0.0f, 1.0f);
+			constraint = mPhysicsWorld->createJoint(jointInfo);
 
-				constraint = hc;
-			}
+			ASSERT(constraint);
 		}
 		break;
 
@@ -916,23 +877,23 @@ PintJointHandle ReactPhysics3D::CreateJoint(const PINT_JOINT_CREATE& desc)
 		{
 			const PINT_PRISMATIC_JOINT_CREATE& jc = static_cast<const PINT_PRISMATIC_JOINT_CREATE&>(desc);
 
-			const btTransform frameInA = CreateFrame(jc.mLocalPivot0, jc.mLocalAxis0);
-			const btTransform frameInB = CreateFrame(jc.mLocalPivot1, jc.mLocalAxis1);
+			const rp3d::Transform& body0ToWorld = body0->getTransform();
+			rp3d::SliderJointInfo jointInfo(body0, body1, body0ToWorld * ToRP3DVector3(jc.mLocalPivot0),
+											body0ToWorld.getOrientation() * ToRP3DVector3(jc.mLocalAxis0));
+			jointInfo.isCollisionEnabled = false;
 
-			btSliderConstraint* sc = new btSliderConstraint(	*body0, *body1,
-																frameInA, frameInB,
-																false);
-//			sc->setUpperLinLimit(10.0f);
-//			sc->setLowerLinLimit(-10.0f);
+			if(jc.mMinLimit <= jc.mMaxLimit) {
+				jointInfo.isLimitEnabled = true;
+				jointInfo.minTranslationLimit = jc.mMinLimit;
+				jointInfo.maxTranslationLimit = jc.mMaxLimit;
+			}
 
-			constraint = sc;
+			constraint = mPhysicsWorld->createJoint(jointInfo);
+
+			ASSERT(constraint);
 		}
 		break;
 	}
-
-	if(constraint)
-		mDynamicsWorld->addConstraint(constraint, true);
-	*/
 
 	return constraint;
 }
@@ -941,19 +902,16 @@ void ReactPhysics3D::SetDisabledGroups(udword nb_groups, const PintDisabledGroup
 {
 	for(udword i=0;i<nb_groups;i++)
 	{
-		// The Bullet collision groups are a little bit of a mindfuck!
-		const udword btGroup0 = RemapCollisionGroup(groups[i].mGroup0);
-		const udword btGroup1 = RemapCollisionGroup(groups[i].mGroup1);
-		ASSERT(btGroup0<32);
-		ASSERT(btGroup1<32);
+		ASSERT(groups[i].mGroup0 < 32);
+		ASSERT(groups[i].mGroup1 < 32);
 
-		udword Mask0 = mGroupMasks[btGroup0];
-		Mask0 ^= 1<<btGroup1;
-		mGroupMasks[btGroup0] = Mask0;
+		udword Mask0 = mGroupMasks[groups[i].mGroup0];
+		Mask0 ^= 1<<groups[i].mGroup1;
+		mGroupMasks[groups[i].mGroup0] = Mask0;
 
-		udword Mask1 = mGroupMasks[btGroup1];
-		Mask1 ^= 1<<btGroup0;
-		mGroupMasks[btGroup1] = Mask0;
+		udword Mask1 = mGroupMasks[groups[i].mGroup1];
+		Mask1 ^= 1<<groups[i].mGroup0;
+		mGroupMasks[groups[i].mGroup1] = Mask0;
 	}
 }
 

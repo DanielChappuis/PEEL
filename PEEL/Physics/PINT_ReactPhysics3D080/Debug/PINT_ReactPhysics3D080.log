@@ -933,7 +933,7 @@
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
        The target "CoreCompile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (59,12)" does not exist in the project, and will be ignored.
-Build started 16.06.2020 23:37:46.
+Build started 24.06.2020 09:46:27.
 Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
@@ -958,10 +958,10 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
      1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={FDF5E01B-E984-415A-90F0-B41E51C5D0F8}
+         VSTEL_SolutionSessionID={9D0166CB-B8D7-4147-A08E-E04DE8831485}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=259691812
+         VSTEL_CurrentSolutionBuildID=901014312
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={EEC474C5-35FD-434E-9D5B-8BB4ED0B4720}
@@ -1248,57 +1248,27 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
          Outputs for D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\STDAFX.CPP:
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\STDAFX.OBJ
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.PCH
-         stdafx.cpp will be compiled because D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\PINT_REACTPHYSICS3D080.H was modified at 16.06.2020 23:37:40.
-         Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1624
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I..\Ice\APIs\Ice /I.\ /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /Zi /nologo /W3 /WX- /diagnostics:column /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yc"stdafx.h" /Fp"Debug\PINT_ReactPhysics3D080.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
-         Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Debug\PINT_Rea.EEC474C5.tlog /r D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\STDAFX.CPP /b MSBuildConsole_CancelEvent86ff0cb99adb40409e40aedb51dddcb3  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe"  /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I..\Ice\APIs\Ice /I.\ /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /Zi /nologo /W3 /WX- /diagnostics:column /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yc"stdafx.h" /Fp"Debug\PINT_ReactPhysics3D080.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
-     1>cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-         stdafx.cpp
-         Using ICE Core
-         Using ICE Maths
-         Using CONTACT
-         Using ICE Meshmerizer
-         Using ICE ImageWork
-         Using ICE GUI
-     1>D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\ContactManifold.h(37,26): warning C4099: 'reactphysics3d::ContactManifoldInfo': type name first seen using 'struct' now seen using 'class'
-       D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\ContactManifoldInfo.h(42): message : see declaration of 'reactphysics3d::ContactManifoldInfo'
-     1>D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\narrowphase\NarrowPhaseInfoBatch.h(38,26): warning C4099: 'reactphysics3d::ContactManifoldInfo': type name first seen using 'struct' now seen using 'class'
-       D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\ContactManifold.h(37): message : see declaration of 'reactphysics3d::ContactManifoldInfo'
-     1>D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\narrowphase\NarrowPhaseAlgorithm.h(36,26): warning C4099: 'reactphysics3d::ContactManifoldInfo': type name first seen using 'struct' now seen using 'class'
-       D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\narrowphase\NarrowPhaseInfoBatch.h(38): message : see declaration of 'reactphysics3d::ContactManifoldInfo'
-     1>D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\shapes\HeightFieldShape.h(197,104): warning C4244: 'return': conversion from 'double' to 'reactphysics3d::decimal', possible loss of data
-     1>D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\shapes\HeightFieldShape.h(205,19): warning C4244: 'return': conversion from 'reactphysics3d::decimal' to 'int', possible loss of data
-     1>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\algorithm(2140,1): warning C4242: '=': conversion from 'int' to 'char', possible loss of data
-       D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\utils\DefaultLogger.h(256): message : see reference to function template instantiation '_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)' being compiled
-                 with
-                 [
-                     _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
-                     _Elem=char,
-                     _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
-                     _Fn=int (__cdecl *)(int)
-                 ]
+         All outputs are up-to-date.
        Done executing task "CL".
        Task "CL"
-         Read Tracking Logs:
-         	Debug\PINT_Rea.EEC474C5.tlog\CL.read.1.tlog
+         Using cached input dependency table built from:
+         	D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Debug\PINT_Rea.EEC474C5.tlog\CL.read.1.tlog
          Outputs for D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_COMMON\PINT_COMMON.CPP|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_COMMON\PINT_COMMONREACTPHYSICS3D.CPP|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\PINT_REACTPHYSICS3D080.CPP:
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_COMMON.OBJ
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_COMMONREACTPHYSICS3D.OBJ
          	D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.OBJ
-         ..\PINT_Common\PINT_Common.cpp will be compiled because D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.PCH was modified at 16.06.2020 23:37:47.
-         ..\PINT_Common\PINT_CommonReactPhysics3D.cpp will be compiled because D:\Development\Git\PEEL\PEEL\Physics\PINT_Common\PINT_CommonReactPhysics3D.cpp was modified at 16.06.2020 23:37:35.
-         PINT_ReactPhysics3D080.cpp will be compiled because D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.PCH was modified at 16.06.2020 23:37:47.
+         ..\PINT_Common\PINT_CommonReactPhysics3D.cpp will be compiled because D:\Development\Git\PEEL\PEEL\Physics\PINT_Common\PINT_CommonReactPhysics3D.cpp was modified at 24.06.2020 09:46:15.
+         PINT_ReactPhysics3D080.cpp will be compiled because D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_COMMON\PINT_COMMONREACTPHYSICS3D.H was modified at 24.06.2020 09:43:58.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1384
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I..\Ice\APIs\Ice /I.\ /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /Zi /nologo /W3 /WX- /diagnostics:column /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yu"stdafx.h" /Fp"Debug\PINT_ReactPhysics3D080.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\PINT_Common\PINT_Common.cpp ..\PINT_Common\PINT_CommonReactPhysics3D.cpp PINT_ReactPhysics3D080.cpp
+           VS_UNICODE_OUTPUT=1672
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I..\Ice\APIs\Ice /I.\ /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /Zi /nologo /W3 /WX- /diagnostics:column /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yu"stdafx.h" /Fp"Debug\PINT_ReactPhysics3D080.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\PINT_Common\PINT_CommonReactPhysics3D.cpp PINT_ReactPhysics3D080.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Debug\PINT_Rea.EEC474C5.tlog /r "D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_COMMON\PINT_COMMON.CPP|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_COMMON\PINT_COMMONREACTPHYSICS3D.CPP|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\PINT_REACTPHYSICS3D080.CPP" /b MSBuildConsole_CancelEvent7158e03fcc9f4c87bdc0df7bdefba192  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe"  /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I..\Ice\APIs\Ice /I.\ /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /Zi /nologo /W3 /WX- /diagnostics:column /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yu"stdafx.h" /Fp"Debug\PINT_ReactPhysics3D080.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\PINT_Common\PINT_Common.cpp ..\PINT_Common\PINT_CommonReactPhysics3D.cpp PINT_ReactPhysics3D080.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Debug\PINT_Rea.EEC474C5.tlog /r "D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_COMMON\PINT_COMMONREACTPHYSICS3D.CPP|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\PINT_REACTPHYSICS3D080.CPP" /b MSBuildConsole_CancelEventd11f188dcb8b48018a9c6d3e62f45595  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\CL.exe"  /c /I"..\Ice\APIs\Ice\#Plugins\FlexineSDK" /I..\Ice\APIs\Ice /I.\ /I..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Include /Zi /nologo /W3 /WX- /diagnostics:column /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D PINT_BULLET_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR- /Yu"stdafx.h" /Fp"Debug\PINT_ReactPhysics3D080.pch" /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt ..\PINT_Common\PINT_CommonReactPhysics3D.cpp PINT_ReactPhysics3D080.cpp
      1>cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-         PINT_ReactPhysics3D080.cpp
          PINT_CommonReactPhysics3D.cpp
-         PINT_Common.cpp
+         Generating Code...
+         Compiling...
+         PINT_ReactPhysics3D080.cpp
          Generating Code...
        Done executing task "CL".
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '' and '$(MultiProcCL)' != 'true') was evaluated as ('Create' != 'Create' and ''!='true' and '' == '' and stdafx.cpp != '' and 'false' != 'true').
@@ -1461,13 +1431,13 @@ Logging verbosity is set to: Detailed.     1>Project "D:\Development\Git\PEEL\PE
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.26.28801\BIN\HOSTX86\X86\1033\LINKUI.DLL
          Source compilation required: input D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.OBJ is newer than output D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080_D.DLL.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1680
+           VS_UNICODE_OUTPUT=1744
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\PINT_ReactPhysics3D080_D.dll" /INCREMENTAL:NO /NOLOGO ..\Ice\Lib\IceCore.lib ..\Ice\Lib\IceMaths.lib ..\Ice\Lib\Contact.lib ..\Ice\Lib\Meshmerizer.lib ..\Ice\Lib\IceImageWork.lib ..\Ice\Lib\IceGUI.lib ..\Ice\Lib\IML.lib ..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Debug\reactphysics3d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Development\Git\PEEL\PEEL\Debug\PINT_ReactPhysics3D080.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\Git\PEEL\PEEL\Debug\PINT_ReactPhysics3D080.lib" /MACHINE:X86 /SAFESEH /DLL Debug\PINT_Common.obj
          Debug\PINT_CommonReactPhysics3D.obj
          Debug\PINT_ReactPhysics3D080.obj
          Debug\stdafx.obj
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Debug\PINT_Rea.EEC474C5.tlog /r "D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_COMMON.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_COMMONREACTPHYSICS3D.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\STDAFX.OBJ" /b MSBuildConsole_CancelEvent4c90ff007b6344e78ffbdef54d2665be  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:".\Debug\PINT_ReactPhysics3D080_D.dll" /INCREMENTAL:NO /NOLOGO ..\Ice\Lib\IceCore.lib ..\Ice\Lib\IceMaths.lib ..\Ice\Lib\Contact.lib ..\Ice\Lib\Meshmerizer.lib ..\Ice\Lib\IceImageWork.lib ..\Ice\Lib\IceGUI.lib ..\Ice\Lib\IML.lib ..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Debug\reactphysics3d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Development\Git\PEEL\PEEL\Debug\PINT_ReactPhysics3D080.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\Git\PEEL\PEEL\Debug\PINT_ReactPhysics3D080.lib" /MACHINE:X86 /SAFESEH /DLL Debug\PINT_Common.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\Debug\PINT_Rea.EEC474C5.tlog /r "D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_COMMON.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_COMMONREACTPHYSICS3D.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\PINT_REACTPHYSICS3D080.OBJ|D:\DEVELOPMENT\GIT\PEEL\PEEL\PHYSICS\PINT_REACTPHYSICS3D080\DEBUG\STDAFX.OBJ" /b MSBuildConsole_CancelEvent72f7934b2a21432886bbeccb9e615c84  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:".\Debug\PINT_ReactPhysics3D080_D.dll" /INCREMENTAL:NO /NOLOGO ..\Ice\Lib\IceCore.lib ..\Ice\Lib\IceMaths.lib ..\Ice\Lib\Contact.lib ..\Ice\Lib\Meshmerizer.lib ..\Ice\Lib\IceImageWork.lib ..\Ice\Lib\IceGUI.lib ..\Ice\Lib\IML.lib ..\..\..\PEEL_Externals\ReactPhysics3Dv0_8_0\Debug\reactphysics3d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Development\Git\PEEL\PEEL\Debug\PINT_ReactPhysics3D080.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\Git\PEEL\PEEL\Debug\PINT_ReactPhysics3D080.lib" /MACHINE:X86 /SAFESEH /DLL Debug\PINT_Common.obj
          Debug\PINT_CommonReactPhysics3D.obj
          Debug\PINT_ReactPhysics3D080.obj
          Debug\stdafx.obj
@@ -1677,16 +1647,6 @@ Build succeeded.
        "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (Build target) (1) ->
        (ClCompile target) -> 
          cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-         D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\ContactManifold.h(37,26): warning C4099: 'reactphysics3d::ContactManifoldInfo': type name first seen using 'struct' now seen using 'class'
-         D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\narrowphase\NarrowPhaseInfoBatch.h(38,26): warning C4099: 'reactphysics3d::ContactManifoldInfo': type name first seen using 'struct' now seen using 'class'
-         D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\narrowphase\NarrowPhaseAlgorithm.h(36,26): warning C4099: 'reactphysics3d::ContactManifoldInfo': type name first seen using 'struct' now seen using 'class'
-         D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\shapes\HeightFieldShape.h(197,104): warning C4244: 'return': conversion from 'double' to 'reactphysics3d::decimal', possible loss of data
-         D:\Development\Git\PEEL\PEEL_Externals\ReactPhysics3Dv0_8_0\Include\reactphysics3d\collision\shapes\HeightFieldShape.h(205,19): warning C4244: 'return': conversion from 'reactphysics3d::decimal' to 'int', possible loss of data
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\algorithm(2140,1): warning C4242: '=': conversion from 'int' to 'char', possible loss of data
-
-
-       "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (Build target) (1) ->
-         cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
 
 
        "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (Build target) (1) ->
@@ -1697,7 +1657,7 @@ Build succeeded.
        "D:\Development\Git\PEEL\PEEL\Physics\PINT_ReactPhysics3D080\PINT_ReactPhysics3D080.vcxproj" (Build target) (1) ->
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1290,5): warning MSB8012: TargetName(PINT_ReactPhysics3D080) does not match the Linker's OutputFile property value (PINT_ReactPhysics3D080_D). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 
-    11 Warning(s)
+    4 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:04.00
+Time Elapsed 00:00:05.45

@@ -20,4 +20,40 @@
 		return PR(ToPoint(p), ToQuat(q));
 	}
 
+
+	struct MyRaycastCallback : public rp3d::RaycastCallback
+	{
+		public:
+
+			rp3d::Vector3 worldHitPoint;
+			rp3d::Vector3 worldHitNormal;
+			int hitTriangleIndex;
+			rp3d::RigidBody* hitBody;
+			rp3d::decimal hitFraction;
+
+			MyRaycastCallback() {
+
+			}
+
+			void resetResult() {
+				hitBody = nullptr;
+			}
+
+			virtual rp3d::decimal notifyRaycastHit(const rp3d::RaycastInfo& info) override {
+
+				worldHitPoint = info.worldPoint;
+				worldHitNormal = info.worldNormal;
+				hitTriangleIndex = info.triangleIndex;
+				hitTriangleIndex = info.triangleIndex;
+				hitBody = static_cast<rp3d::RigidBody*>(info.body);
+				hitFraction = info.hitFraction;
+
+				// We return the hitFraction (we want to get the closest hit)
+				return info.hitFraction;
+			}
+
+	};
+
+	static inline_ void FillRaycastResultStruct(PintRaycastHit& hit, const MyRaycastCallback& result, float max_dist);
+
 #endif

@@ -17,32 +17,44 @@ udword ReactPhysics3D::BatchRaycasts(PintSQThreadContext context, udword nb, Pin
 
 	udword NbHits = 0;
 	
-	/*
+	MyRaycastCallback resultCallback;
+
 	while(nb--)
 	{
-		const btVector3 from = ToBtVector3(raycasts->mOrigin);
-		const btVector3 target = ToBtVector3(raycasts->mOrigin + raycasts->mDir * raycasts->mMaxDist);
+		const rp3d::Vector3 from = ToRP3DVector3(raycasts->mOrigin);
+		const rp3d::Vector3 target = ToRP3DVector3(raycasts->mOrigin + raycasts->mDir * raycasts->mMaxDist);
 
-//		btCollisionWorld::ClosestRayResultCallback resultCallback(from, target);
-		MyClosestRayResultCallback resultCallback(from, target);
+		rp3d::Ray ray(from, target);
 
-		mDynamicsWorld->rayTest(from, target, resultCallback);
+		resultCallback.resetResult();
+		mPhysicsWorld->raycast(ray, &resultCallback);
 
-		if(resultCallback.m_collisionObject)
+		if(resultCallback.hitBody != nullptr)
 		{
 			NbHits++;
-			FillResultStruct(*dest, resultCallback, raycasts->mMaxDist);
+			FillRaycastResultStruct(*dest, resultCallback, raycasts->mMaxDist);
 		}
 		else
 		{
 			dest->mObject = null;
 		}
+
 		raycasts++;
 		dest++;
 	}
-	*/
 
 	return NbHits;
+}
+
+static inline_ void FillRaycastResultStruct(PintRaycastHit& hit, const MyRaycastCallback& result, float max_dist)
+{
+//	hit.mObject			= result.m_collisionObject;
+	hit.mObject			= (PintObjectHandle)(result.hitBody);
+	hit.mImpact			= ToPoint(result.worldHitPoint);
+	hit.mNormal			= ToPoint(result.worldHitNormal);
+//	hit.mDistance		= origin.Distance(hit.mImpact);
+	hit.mDistance		= result.hitFraction * max_dist;
+	hit.mTriangleIndex	= result.hitTriangleIndex;
 }
 
 udword ReactPhysics3D::BatchBoxSweeps(PintSQThreadContext context, udword nb, PintRaycastHit* dest, const PintBoxSweepData* sweeps)
